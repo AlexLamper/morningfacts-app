@@ -120,6 +120,7 @@ class _FactFlowState extends ConsumerState<FactFlow> {
       levels: p.levels,
       seen: p.seen.toSet(),
       onlyTopic: widget.onlyTopic,
+      random: ref.read(randomProvider),
     );
     phase = _Phase.read;
     chosen = null;

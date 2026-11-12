@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -127,6 +128,9 @@ String dayKey(DateTime d) =>
 const freeFactsPerDay = 1;
 
 final sharedPrefsProvider = Provider<SharedPreferences>((ref) => throw UnimplementedError());
+
+/// Randomness for picking facts, overridable in tests and screenshots.
+final randomProvider = Provider<Random>((ref) => Random());
 
 /// The clock, overridable in tests.
 final clockProvider = Provider<DateTime Function()>((ref) => DateTime.now);
