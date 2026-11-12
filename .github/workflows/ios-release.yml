@@ -59,7 +59,6 @@ jobs:
       # Secrets required (set in GitHub repo Settings → Secrets and variables → Actions):
       #   BUILD_CERTIFICATE_BASE64      — base64 of your Distribution .p12 certificate
       #   P12_PASSWORD                  — password for the .p12 file
-      #   BUILD_PROVISION_PROFILE_BASE64 — base64 of your App Store provisioning profile (.mobileprovision)
       #   KEYCHAIN_PASSWORD             — any random password; used only for the temp keychain
 
       - name: Import Distribution certificate
@@ -92,31 +91,18 @@ jobs:
           # Allow codesign tools to access the imported key in CI
           security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
 
-      - name: Install provisioning profile
+      # No provisioning profile secret: Xcode creates and downloads the App
+      # Store profile itself (-allowProvisioningUpdates + the App Store Connect
+      # API key), and registers the bundle id if it does not exist yet.
+      - name: Install App Store Connect API key
         env:
-          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_API_KEY_P8: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8 }}
         run: |
-          PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
-          PP_PLIST=$RUNNER_TEMP/build_pp.plist
-          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o "$PP_PATH"
-          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/build_pp.mobileprovision
-
-          # Extract metadata so signing can use the exact profile name/UUID
-          security cms -D -i "$PP_PATH" > "$PP_PLIST"
-          PP_UUID=$(/usr/libexec/PlistBuddy -c 'Print UUID' "$PP_PLIST")
-          PP_NAME=$(/usr/libexec/PlistBuddy -c 'Print Name' "$PP_PLIST")
-          PP_APP_ID=$(/usr/libexec/PlistBuddy -c 'Print Entitlements:application-identifier' "$PP_PLIST")
-          APP_BUNDLE_ID="${PP_APP_ID#*.}"
-
-
-
-          echo "PP_UUID=$PP_UUID" >> $GITHUB_ENV
-          echo "PP_NAME=$PP_NAME" >> $GITHUB_ENV
-          echo "APP_BUNDLE_ID=$APP_BUNDLE_ID" >> $GITHUB_ENV
-
-          echo "Using provisioning profile: $PP_NAME ($PP_UUID)"
-          echo "Provisioning profile app id: $APP_BUNDLE_ID"
+          KEY_DIR="$HOME/.appstoreconnect/private_keys"
+          mkdir -p "$KEY_DIR"
+          echo -n "$APP_STORE_CONNECT_API_KEY_P8" | base64 --decode -o "$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
+          echo "ASC_KEY_PATH=$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8" >> $GITHUB_ENV
 
       # ── 3b. Resolve version ──────────────────────────────────────────────────
       # Asks App Store Connect which version/build numbers already exist and picks
@@ -151,20 +137,13 @@ jobs:
             <key>method</key>
             <string>app-store-connect</string>
             <key>signingStyle</key>
-            <string>manual</string>
+            <string>automatic</string>
             <key>teamID</key>
             <string>${TEAM_ID}</string>
-            <key>signingCertificate</key>
-            <string>Apple Distribution</string>
             <key>uploadBitcode</key>
             <false/>
             <key>uploadSymbols</key>
             <true/>
-            <key>provisioningProfiles</key>
-            <dict>
-              <key>${APP_BUNDLE_ID}</key>
-              <string>${PP_NAME}</string>
-            </dict>
           </dict>
           </plist>
           EOF
@@ -179,8 +158,7 @@ jobs:
           echo "Building $BUILD_NAME ($BUILD_NUMBER)"
 
           if [ -z "${REVENUECAT_APPLE_KEY:-}" ]; then
-            echo "Missing required secret: REVENUECAT_APPLE_KEY"
-            exit 1
+            echo "::warning::REVENUECAT_APPLE_KEY not set - building without purchases (paywall shows but cannot buy)."
           fi
 
           flutter build ios --release --no-codesign \
@@ -192,6 +170,8 @@ jobs:
         working-directory: morningfacts_mobile/ios
         env:
           TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
         run: |
           xcodebuild -workspace Runner.xcworkspace \
             -scheme Runner \
@@ -207,7 +187,11 @@ jobs:
           xcodebuild -exportArchive \
             -archivePath "$RUNNER_TEMP/Runner.xcarchive" \
             -exportOptionsPlist /tmp/ExportOptions.plist \
-            -exportPath ../build/ios/ipa
+            -exportPath ../build/ios/ipa \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$ASC_KEY_PATH" \
+            -authenticationKeyID "$APP_STORE_CONNECT_KEY_ID" \
+            -authenticationKeyIssuerID "$APP_STORE_CONNECT_ISSUER_ID"
 
           IPA_PATH=$(find ../build/ios/ipa -name "*.ipa" | head -1)
           if [ -z "${IPA_PATH:-}" ]; then
@@ -268,9 +252,8 @@ jobs:
           echo "Upload accepted by App Store Connect."
 
       # ── 7. Cleanup ───────────────────────────────────────────────────────────
-      - name: Clean up keychain and provisioning profile
+      - name: Clean up keychain and API key
         if: always()
         run: |
           security delete-keychain $RUNNER_TEMP/app-signing.keychain-db || true
-          rm -f ~/Library/MobileDevice/Provisioning\ Profiles/build_pp.mobileprovision
           rm -f "$HOME/.appstoreconnect/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_KEY_ID }}.p8"

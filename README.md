@@ -39,6 +39,8 @@ flutter test test_screens --update-goldens   # renders every screen to test_scre
 
 Every push to `main` that touches `morningfacts_mobile/` builds and uploads a TestFlight build (`.github/workflows/ios-release.yml`, same flow as BijbelQuiz). Repository secrets needed:
 
-`BUILD_CERTIFICATE_BASE64`, `P12_PASSWORD`, `BUILD_PROVISION_PROFILE_BASE64`, `KEYCHAIN_PASSWORD`, `APPLE_TEAM_ID`, `APP_STORE_CONNECT_KEY_ID`, `APP_STORE_CONNECT_ISSUER_ID`, `APP_STORE_CONNECT_API_KEY_P8`, `REVENUECAT_APPLE_KEY`
+`BUILD_CERTIFICATE_BASE64`, `P12_PASSWORD`, `KEYCHAIN_PASSWORD`, `APPLE_TEAM_ID`, `APP_STORE_CONNECT_KEY_ID`, `APP_STORE_CONNECT_ISSUER_ID`, `APP_STORE_CONNECT_API_KEY_P8` (all the same values as BijbelQuiz). Optional: `REVENUECAT_APPLE_KEY` - without it the build works but purchases are off.
+
+No provisioning profile secret: Xcode creates the App Store profile itself with the API key (`-allowProvisioningUpdates`). The API key needs the Admin or App Manager role.
 
 Bundle id: `com.morningfacts.app`.
