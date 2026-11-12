@@ -231,7 +231,10 @@ class AppController extends Notifier<Prefs> {
 final appProvider = NotifierProvider<AppController, Prefs>(AppController.new);
 
 final factsProvider = FutureProvider<List<Fact>>((ref) async {
-  final raw = await rootBundle.loadString('assets/content/facts.json');
+  // load + utf8.decode instead of loadString: loadString decodes files over
+  // 50 KB in a background isolate, which never finishes inside widget tests.
+  final data = await rootBundle.load('assets/content/facts.json');
+  final raw = utf8.decode(data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
   final j = jsonDecode(raw) as Map<String, dynamic>;
   return (j['facts'] as List).map((e) => Fact.fromJson(e as Map<String, dynamic>)).toList();
 });

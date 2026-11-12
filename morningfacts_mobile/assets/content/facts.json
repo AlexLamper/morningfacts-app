@@ -1,125 +1,2981 @@
 {
-  "version": 1,
-  "facts": [
-    {
-      "id": "physics-ice-floats", "topic": "physics", "level": 2, "answer": 1, "source": "USGS Water Science School",
-      "en": {"title": "Why does ice float on water?", "body": "When water freezes, its molecules lock into an open, six-sided pattern. That makes ice about 9% less dense than liquid water - so it floats.", "question": "Ice is about how much less dense than liquid water?", "options": ["2%", "9%", "25%", "50%"], "explain": "The open six-sided pattern in ice takes up more space, so the same water weighs less per litre."},
-      "nl": {"title": "Waarom drijft ijs op water?", "body": "Als water bevriest, schikken de moleculen zich in een open, zeshoekig patroon. Daardoor is ijs ongeveer 9% minder dicht dan vloeibaar water - en dus drijft het.", "question": "Hoeveel minder dicht is ijs ongeveer dan vloeibaar water?", "options": ["2%", "9%", "25%", "50%"], "explain": "Het open zeshoekige patroon neemt meer ruimte in, dus hetzelfde water weegt minder per liter."}
-    },
-    {
-      "id": "physics-blue-sky", "topic": "physics", "level": 1, "answer": 1, "source": "NASA Space Place",
-      "en": {"title": "Why is the sky blue?", "body": "Sunlight contains every colour. Tiny gas molecules in the air scatter short wavelengths much more than long ones, so blue light bounces all over the sky and reaches your eyes from every direction.", "question": "Which colour of sunlight is scattered most by air?", "options": ["Red", "Blue", "Yellow", "Orange"], "explain": "Blue has a short wavelength, so air scatters it far more than red or yellow."},
-      "nl": {"title": "Waarom is de lucht blauw?", "body": "Zonlicht bevat alle kleuren. Kleine gasmoleculen in de lucht verstrooien korte golflengtes veel sterker dan lange, dus blauw licht kaatst door de hele hemel en bereikt je ogen van alle kanten.", "question": "Welke kleur zonlicht wordt het sterkst verstrooid door lucht?", "options": ["Rood", "Blauw", "Geel", "Oranje"], "explain": "Blauw heeft een korte golflengte, dus lucht verstrooit het veel meer dan rood of geel."}
-    },
-    {
-      "id": "chemistry-salt-ice", "topic": "chemistry", "level": 1, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why does salt melt ice on roads?", "body": "Salt dissolves in the thin layer of water on ice and lowers the temperature at which that water freezes. Below 0 °C the salty water stays liquid, so the ice melts away.", "question": "What does salt do to the freezing point of water?", "options": ["Lowers it", "Raises it", "Nothing", "Doubles it"], "explain": "Dissolved salt gets in the way of water molecules forming ice, so water needs to be colder to freeze."},
-      "nl": {"title": "Waarom smelt strooizout ijs op de weg?", "body": "Zout lost op in het dunne laagje water op het ijs en verlaagt de temperatuur waarbij dat water bevriest. Onder 0 °C blijft het zoute water vloeibaar, dus het ijs smelt weg.", "question": "Wat doet zout met het vriespunt van water?", "options": ["Verlaagt het", "Verhoogt het", "Niets", "Verdubbelt het"], "explain": "Opgelost zout zit de watermoleculen in de weg bij het vormen van ijs, dus water moet kouder worden om te bevriezen."}
-    },
-    {
-      "id": "chemistry-onion-tears", "topic": "chemistry", "level": 2, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why do onions make you cry?", "body": "Cutting an onion breaks its cells and mixes chemicals that were kept apart. They react into a gas that drifts up, reaches your eyes and irritates them, so your eyes make tears to wash it away.", "question": "What actually irritates your eyes when you cut an onion?", "options": ["A gas the onion releases", "Onion juice splashing", "The smell", "Tiny onion fibres"], "explain": "The irritating compound is a gas formed the moment the onion's cells are damaged."},
-      "nl": {"title": "Waarom moet je huilen van uien?", "body": "Als je een ui snijdt, gaan de cellen kapot en mengen stoffen die eerst gescheiden waren. Die reageren tot een gas dat opstijgt, je ogen bereikt en ze prikkelt, dus je ogen maken tranen om het weg te spoelen.", "question": "Wat prikkelt je ogen eigenlijk als je een ui snijdt?", "options": ["Een gas dat de ui afgeeft", "Spattend uiensap", "De geur", "Kleine uienvezels"], "explain": "De prikkelende stof is een gas dat ontstaat op het moment dat de cellen van de ui beschadigd raken."}
-    },
-    {
-      "id": "math-divide-by-zero", "topic": "math", "level": 1, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why can't you divide by zero?", "body": "Dividing 6 by 2 asks: what times 2 gives 6? The answer is 3. Dividing 6 by 0 asks: what times 0 gives 6? No number works, because anything times 0 is 0.", "question": "What do you get when you multiply any number by 0?", "options": ["The number itself", "1", "0", "Infinity"], "explain": "Anything times 0 is 0, so no number can turn 0 back into 6."},
-      "nl": {"title": "Waarom kun je niet delen door nul?", "body": "6 gedeeld door 2 vraagt: wat keer 2 geeft 6? Het antwoord is 3. 6 gedeeld door 0 vraagt: wat keer 0 geeft 6? Geen enkel getal werkt, want alles keer 0 is 0.", "question": "Wat krijg je als je een getal met 0 vermenigvuldigt?", "options": ["Het getal zelf", "1", "0", "Oneindig"], "explain": "Alles keer 0 is 0, dus geen enkel getal maakt van 0 weer 6."}
-    },
-    {
-      "id": "math-birthday-paradox", "topic": "math", "level": 2, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "The birthday paradox", "body": "In a group of just 23 people, the chance that two of them share a birthday is already above 50%. It feels too low, but with 23 people there are 253 different pairs that could match.", "question": "How many people do you need for a better than 50% chance of a shared birthday?", "options": ["23", "50", "183", "366"], "explain": "23 people form 253 pairs, and each pair is another chance for a match."},
-      "nl": {"title": "De verjaardagsparadox", "body": "In een groep van maar 23 mensen is de kans dat twee van hen op dezelfde dag jarig zijn al groter dan 50%. Het voelt te weinig, maar 23 mensen vormen 253 verschillende tweetallen die kunnen matchen.", "question": "Hoeveel mensen heb je nodig voor meer dan 50% kans op een gedeelde verjaardag?", "options": ["23", "50", "183", "366"], "explain": "23 mensen vormen 253 tweetallen, en elk tweetal is een extra kans op een match."}
-    },
-    {
-      "id": "biology-octopus-hearts", "topic": "biology", "level": 1, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "How many hearts does an octopus have?", "body": "Three. Two hearts pump blood through the gills and one pumps it around the rest of the body. Their blood is blue, because it carries oxygen with copper instead of iron.", "question": "How many hearts does an octopus have?", "options": ["1", "2", "3", "8"], "explain": "Two gill hearts and one body heart - and the blood is blue thanks to copper."},
-      "nl": {"title": "Hoeveel harten heeft een octopus?", "body": "Drie. Twee harten pompen bloed door de kieuwen en één pompt het door de rest van het lichaam. Het bloed is blauw, omdat het zuurstof vervoert met koper in plaats van ijzer.", "question": "Hoeveel harten heeft een octopus?", "options": ["1", "2", "3", "8"], "explain": "Twee kieuwharten en één lichaamshart - en het bloed is blauw dankzij koper."}
-    },
-    {
-      "id": "biology-autumn-leaves", "topic": "biology", "level": 2, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why do leaves change colour in autumn?", "body": "Green chlorophyll breaks down as days get shorter. That reveals yellow and orange pigments that were in the leaf all along, while some trees also make new red pigments in autumn.", "question": "Which pigment makes leaves green?", "options": ["Chlorophyll", "Carotene", "Melanin", "Anthocyanin"], "explain": "When chlorophyll fades, the yellow and orange carotenoids underneath become visible."},
-      "nl": {"title": "Waarom verkleuren bladeren in de herfst?", "body": "Groen bladgroen breekt af als de dagen korter worden. Daardoor worden gele en oranje kleurstoffen zichtbaar die al die tijd in het blad zaten, en sommige bomen maken in de herfst ook nieuwe rode kleurstoffen.", "question": "Welke kleurstof maakt bladeren groen?", "options": ["Bladgroen (chlorofyl)", "Caroteen", "Melanine", "Anthocyaan"], "explain": "Als het bladgroen verdwijnt, worden de gele en oranje carotenoïden eronder zichtbaar."}
-    },
-    {
-      "id": "space-sunlight-time", "topic": "space", "level": 1, "answer": 1, "source": "NASA",
-      "en": {"title": "How old is the sunlight you see?", "body": "Light from the Sun takes about 8 minutes and 20 seconds to reach Earth. So when you look at a sunrise, you see the Sun as it was more than 8 minutes ago.", "question": "How long does sunlight take to reach Earth?", "options": ["About 8 seconds", "About 8 minutes", "About 8 hours", "About 8 days"], "explain": "The Sun is about 150 million km away, and light covers that in roughly 8 minutes and 20 seconds."},
-      "nl": {"title": "Hoe oud is het zonlicht dat je ziet?", "body": "Licht van de zon doet er ongeveer 8 minuten en 20 seconden over om de aarde te bereiken. Als je naar een zonsopkomst kijkt, zie je de zon dus zoals hij ruim 8 minuten geleden was.", "question": "Hoe lang doet zonlicht erover om de aarde te bereiken?", "options": ["Ongeveer 8 seconden", "Ongeveer 8 minuten", "Ongeveer 8 uur", "Ongeveer 8 dagen"], "explain": "De zon staat zo'n 150 miljoen km weg, en licht legt dat af in ongeveer 8 minuten en 20 seconden."}
-    },
-    {
-      "id": "space-venus-day", "topic": "space", "level": 2, "answer": 0, "source": "NASA",
-      "en": {"title": "On Venus, a day lasts longer than a year", "body": "Venus spins very slowly: one rotation takes about 243 Earth days. It orbits the Sun in about 225 Earth days, so a single spin takes longer than a whole trip around the Sun.", "question": "On Venus, which takes longer?", "options": ["One rotation (a day)", "One orbit (a year)", "They are equal", "Venus does not rotate"], "explain": "About 243 Earth days to rotate once, but only about 225 to orbit the Sun."},
-      "nl": {"title": "Op Venus duurt een dag langer dan een jaar", "body": "Venus draait heel langzaam om zijn as: één rondje duurt ongeveer 243 aardse dagen. Een rondje om de zon duurt ongeveer 225 aardse dagen, dus één keer draaien duurt langer dan een hele baan om de zon.", "question": "Wat duurt op Venus langer?", "options": ["Eén keer om de as draaien (een dag)", "Eén baan om de zon (een jaar)", "Ze zijn even lang", "Venus draait niet"], "explain": "Ongeveer 243 aardse dagen om één keer te draaien, maar maar zo'n 225 om rond de zon te gaan."}
-    },
-    {
-      "id": "language-quarantine", "topic": "language", "level": 1, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "There is a number hidden in 'quarantine'", "body": "In 14th-century Venice, ships arriving during plague outbreaks had to wait offshore for 40 days before anyone could land. 'Forty days' in Venetian Italian was 'quaranta giorni'.", "question": "Which number is hidden in the word 'quarantine'?", "options": ["4", "14", "40", "400"], "explain": "From Italian 'quaranta giorni': forty days of isolation for arriving ships."},
-      "nl": {"title": "In 'quarantaine' zit een getal verstopt", "body": "In het Venetië van de 14e eeuw moesten schepen tijdens pestuitbraken 40 dagen voor de kust wachten voordat iemand aan land mocht. 'Veertig dagen' was in het Italiaans 'quaranta giorni'.", "question": "Welk getal zit verstopt in het woord 'quarantaine'?", "options": ["4", "14", "40", "400"], "explain": "Van het Italiaanse 'quaranta giorni': veertig dagen afzondering voor aankomende schepen."}
-    },
-    {
-      "id": "language-robot", "topic": "language", "level": 2, "answer": 1, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Where does the word 'robot' come from?", "body": "It comes from the 1920 Czech play R.U.R. by Karel Čapek, about artificial workers. The word is based on the Czech 'robota', meaning forced labour.", "question": "Which language gave us the word 'robot'?", "options": ["German", "Czech", "Japanese", "Latin"], "explain": "From Czech 'robota' (forced labour), made famous by Karel Čapek's 1920 play R.U.R."},
-      "nl": {"title": "Waar komt het woord 'robot' vandaan?", "body": "Het komt uit het Tsjechische toneelstuk R.U.R. van Karel Čapek uit 1920, over kunstmatige arbeiders. Het woord is gebaseerd op het Tsjechische 'robota', dat dwangarbeid betekent.", "question": "Uit welke taal komt het woord 'robot'?", "options": ["Duits", "Tsjechisch", "Japans", "Latijn"], "explain": "Van het Tsjechische 'robota' (dwangarbeid), bekend geworden door Čapeks toneelstuk R.U.R. uit 1920."}
-    },
-    {
-      "id": "history-hundred-years-war", "topic": "history", "level": 1, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "The Hundred Years' War didn't last 100 years", "body": "The conflict between England and France ran from 1337 to 1453 - that is 116 years. It was not one long fight but a series of wars with long truces in between.", "question": "How long did the Hundred Years' War actually last?", "options": ["90 years", "100 years", "116 years", "150 years"], "explain": "From 1337 to 1453: 116 years, with several long truces."},
-      "nl": {"title": "De Honderdjarige Oorlog duurde geen 100 jaar", "body": "Het conflict tussen Engeland en Frankrijk liep van 1337 tot 1453 - dat is 116 jaar. Het was geen lange strijd maar een reeks oorlogen met lange bestanden ertussen.", "question": "Hoe lang duurde de Honderdjarige Oorlog echt?", "options": ["90 jaar", "100 jaar", "116 jaar", "150 jaar"], "explain": "Van 1337 tot 1453: 116 jaar, met meerdere lange bestanden."}
-    },
-    {
-      "id": "history-cleopatra", "topic": "history", "level": 2, "answer": 1, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Cleopatra and the Moon landing", "body": "The Great Pyramid of Giza was built around 2560 BC. Cleopatra died in 30 BC - about 2,500 years later. The Moon landing in 1969 came only about 2,000 years after her.", "question": "Did Cleopatra live closer in time to the Great Pyramid or to the Moon landing?", "options": ["The Great Pyramid", "The Moon landing", "Exactly in between", "She saw the pyramid being built"], "explain": "About 2,500 years separate her from the pyramid, but only about 2,000 from the Moon landing."},
-      "nl": {"title": "Cleopatra en de maanlanding", "body": "De Grote Piramide van Gizeh werd rond 2560 v.Chr. gebouwd. Cleopatra stierf in 30 v.Chr. - zo'n 2500 jaar later. De maanlanding in 1969 kwam maar ongeveer 2000 jaar na haar.", "question": "Leefde Cleopatra in de tijd dichter bij de Grote Piramide of bij de maanlanding?", "options": ["De Grote Piramide", "De maanlanding", "Precies ertussenin", "Ze zag de piramide bouwen"], "explain": "Zo'n 2500 jaar scheidt haar van de piramide, maar maar zo'n 2000 van de maanlanding."}
-    },
-    {
-      "id": "geography-time-zones", "topic": "geography", "level": 1, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Which country has the most time zones?", "body": "France - thanks to overseas territories like French Polynesia, Réunion and French Guiana it spans 12 time zones, more than Russia or the United States.", "question": "Which country spans the most time zones?", "options": ["Russia", "United States", "France", "China"], "explain": "Its overseas territories spread France across 12 time zones."},
-      "nl": {"title": "Welk land heeft de meeste tijdzones?", "body": "Frankrijk - dankzij overzeese gebieden zoals Frans-Polynesië, Réunion en Frans-Guyana beslaat het 12 tijdzones, meer dan Rusland of de Verenigde Staten.", "question": "Welk land beslaat de meeste tijdzones?", "options": ["Rusland", "Verenigde Staten", "Frankrijk", "China"], "explain": "Door de overzeese gebieden ligt Frankrijk verspreid over 12 tijdzones."}
-    },
-    {
-      "id": "geography-longest-coastline", "topic": "geography", "level": 2, "answer": 3, "source": "Encyclopaedia Britannica",
-      "en": {"title": "The longest coastline in the world", "body": "Canada's coastline is about 200,000 km long - long enough to circle the Earth roughly five times. Thousands of Arctic islands and deep inlets add up to that huge length.", "question": "Which country has the longest coastline?", "options": ["Australia", "Norway", "Indonesia", "Canada"], "explain": "Canada's many Arctic islands and inlets give it roughly 200,000 km of coast."},
-      "nl": {"title": "De langste kustlijn ter wereld", "body": "De kustlijn van Canada is ongeveer 200.000 km lang - genoeg om ruwweg vijf keer rond de aarde te gaan. Duizenden eilanden in het noordpoolgebied en diepe inhammen tellen op tot die enorme lengte.", "question": "Welk land heeft de langste kustlijn?", "options": ["Australië", "Noorwegen", "Indonesië", "Canada"], "explain": "De vele poolgebied-eilanden en inhammen geven Canada zo'n 200.000 km kust."}
-    },
-    {
-      "id": "psychology-tickle", "topic": "psychology", "level": 1, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why can't you tickle yourself?", "body": "When you move, your brain predicts exactly what you will feel and turns the sensation down. Someone else's fingers are unpredictable, so the full tickle gets through.", "question": "Why does tickling yourself not work?", "options": ["Your brain predicts the touch", "Your skin is used to your hands", "You press too softly", "Only fingertips tickle"], "explain": "Your brain predicts your own movements and dampens the feeling before it surprises you."},
-      "nl": {"title": "Waarom kun je jezelf niet kietelen?", "body": "Als je beweegt, voorspelt je brein precies wat je gaat voelen en dempt het gevoel. De vingers van iemand anders zijn onvoorspelbaar, dus dan komt de volle kietel binnen.", "question": "Waarom werkt jezelf kietelen niet?", "options": ["Je brein voorspelt de aanraking", "Je huid is gewend aan je handen", "Je drukt te zacht", "Alleen vingertoppen kietelen"], "explain": "Je brein voorspelt je eigen bewegingen en dempt het gevoel voordat het je kan verrassen."}
-    },
-    {
-      "id": "psychology-zeigarnik", "topic": "psychology", "level": 2, "answer": 1, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why unfinished tasks stick in your head", "body": "In the 1920s psychologist Bluma Zeigarnik noticed that waiters remembered unpaid orders better than paid ones. People tend to remember interrupted tasks better than completed ones - now called the Zeigarnik effect.", "question": "What does the Zeigarnik effect say?", "options": ["We forget unfinished tasks faster", "We remember unfinished tasks better", "We remember first impressions best", "We remember faces better than names"], "explain": "An unfinished task keeps your mind busy, so it stays easier to recall."},
-      "nl": {"title": "Waarom onafgemaakte taken in je hoofd blijven", "body": "In de jaren 20 merkte psycholoog Bluma Zeigarnik dat obers onbetaalde bestellingen beter onthielden dan betaalde. Mensen onthouden onderbroken taken vaak beter dan afgeronde - dat heet nu het Zeigarnik-effect.", "question": "Wat zegt het Zeigarnik-effect?", "options": ["We vergeten onafgemaakte taken sneller", "We onthouden onafgemaakte taken beter", "We onthouden eerste indrukken het best", "We onthouden gezichten beter dan namen"], "explain": "Een onafgemaakte taak houdt je hoofd bezig, dus je weet hem makkelijker terug."}
-    },
-    {
-      "id": "money-compound-interest", "topic": "money", "level": 1, "answer": 1, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Interest on your interest", "body": "With compound interest you also earn interest on the interest you already got. €1,000 at 5% a year grows to about €1,629 after 10 years, not €1,500.", "question": "€1,000 at 5% compound interest for 10 years becomes about…", "options": ["€1,500", "€1,629", "€2,000", "€1,050"], "explain": "1,000 × 1.05 ten times is about €1,629 - the extra €129 is interest on interest."},
-      "nl": {"title": "Rente op je rente", "body": "Bij samengestelde rente krijg je ook rente over de rente die je al hebt gekregen. €1.000 tegen 5% per jaar groeit in 10 jaar naar ongeveer €1.629, niet naar €1.500.", "question": "€1.000 tegen 5% samengestelde rente wordt na 10 jaar ongeveer…", "options": ["€1.500", "€1.629", "€2.000", "€1.050"], "explain": "1.000 × 1,05 tien keer is ongeveer €1.629 - de extra €129 is rente op rente."}
-    },
-    {
-      "id": "money-rule-of-72", "topic": "money", "level": 2, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "The rule of 72", "body": "To estimate how long money takes to double, divide 72 by the yearly interest rate. At 6% a year, your money doubles in about 72 / 6 = 12 years.", "question": "At 8% a year, roughly how long until your money doubles?", "options": ["6 years", "8 years", "9 years", "14 years"], "explain": "72 / 8 = 9 years - a quick estimate that works well for normal interest rates."},
-      "nl": {"title": "De regel van 72", "body": "Wil je schatten hoe lang het duurt voordat geld verdubbelt? Deel 72 door het rentepercentage per jaar. Bij 6% per jaar verdubbelt je geld in ongeveer 72 / 6 = 12 jaar.", "question": "Bij 8% per jaar, hoe lang duurt het ongeveer tot je geld verdubbelt?", "options": ["6 jaar", "8 jaar", "9 jaar", "14 jaar"], "explain": "72 / 8 = 9 jaar - een snelle schatting die goed werkt bij normale rentes."}
-    },
-    {
-      "id": "tech-computer-bug", "topic": "tech", "level": 1, "answer": 3, "source": "Smithsonian National Museum of American History",
-      "en": {"title": "The first computer 'bug' was a real insect", "body": "In 1947 engineers working on the Harvard Mark II computer found a moth stuck in a relay. They taped it into the logbook as the 'first actual case of bug being found'.", "question": "What did engineers find inside the Harvard Mark II in 1947?", "options": ["A mouse", "A spider", "A beetle", "A moth"], "explain": "A moth trapped in a relay - the log page with the taped-in moth still exists."},
-      "nl": {"title": "De eerste computer-'bug' was een echt insect", "body": "In 1947 vonden technici aan de Harvard Mark II-computer een mot die vastzat in een relais. Ze plakten hem in het logboek als 'het eerste echte geval van een gevonden bug'.", "question": "Wat vonden technici in 1947 in de Harvard Mark II?", "options": ["Een muis", "Een spin", "Een kever", "Een mot"], "explain": "Een mot in een relais - de logboekpagina met de vastgeplakte mot bestaat nog steeds."}
-    },
-    {
-      "id": "tech-byte", "topic": "tech", "level": 2, "answer": 2, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why a byte holds 256 values", "body": "A byte is 8 bits, and each bit is either 0 or 1. That gives 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256 combinations - which is why so many old games and colours stop at 255.", "question": "How many different values can one byte hold?", "options": ["8", "100", "256", "1,024"], "explain": "8 bits with 2 options each: 2 to the power 8 = 256, counted from 0 to 255."},
-      "nl": {"title": "Waarom een byte 256 waarden heeft", "body": "Een byte bestaat uit 8 bits, en elke bit is 0 of 1. Dat geeft 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256 combinaties - daarom stoppen zoveel oude games en kleuren bij 255.", "question": "Hoeveel verschillende waarden kan één byte hebben?", "options": ["8", "100", "256", "1.024"], "explain": "8 bits met elk 2 opties: 2 tot de macht 8 = 256, geteld van 0 tot 255."}
-    },
-    {
-      "id": "body-taller-morning", "topic": "body", "level": 1, "answer": 0, "source": "Encyclopaedia Britannica",
-      "en": {"title": "You are taller in the morning", "body": "During the day, gravity slowly squeezes the soft discs between the bones in your spine. Overnight, lying down, they soak up fluid again - so you wake up about a centimetre taller.", "question": "Why are you taller in the morning?", "options": ["Spine discs recover overnight", "Bones grow while you sleep", "Muscles relax in your legs", "Your feet swell less"], "explain": "The discs between your vertebrae flatten by day and recover while you lie down."},
-      "nl": {"title": "Je bent 's ochtends langer", "body": "Overdag drukt de zwaartekracht de zachte schijven tussen je wervels langzaam samen. 's Nachts, als je ligt, nemen ze weer vocht op - dus je wordt ongeveer een centimeter langer wakker.", "question": "Waarom ben je 's ochtends langer?", "options": ["Tussenwervelschijven herstellen 's nachts", "Botten groeien als je slaapt", "Spieren in je benen ontspannen", "Je voeten zijn minder dik"], "explain": "De schijven tussen je wervels worden overdag platter en herstellen als je ligt."}
-    },
-    {
-      "id": "body-stomach-acid", "topic": "body", "level": 2, "answer": 1, "source": "Encyclopaedia Britannica",
-      "en": {"title": "Why your stomach doesn't digest itself", "body": "Your stomach acid is strong enough to break down food, yet the stomach survives it. A thick layer of mucus protects the wall, and the cells of the lining are constantly replaced, every few days.", "question": "What protects the stomach wall from its own acid?", "options": ["Nothing, it slowly dissolves", "A layer of mucus", "A shell of bone", "Water you drink"], "explain": "A thick mucus layer shields the wall, and the lining renews itself every few days."},
-      "nl": {"title": "Waarom je maag zichzelf niet verteert", "body": "Je maagzuur is sterk genoeg om voedsel af te breken, toch overleeft je maag het. Een dikke slijmlaag beschermt de wand, en de cellen van de binnenbekleding worden voortdurend vervangen, om de paar dagen.", "question": "Wat beschermt de maagwand tegen het eigen zuur?", "options": ["Niets, hij lost langzaam op", "Een laag slijm", "Een laag bot", "Water dat je drinkt"], "explain": "Een dikke slijmlaag schermt de wand af, en de binnenbekleding vernieuwt zich om de paar dagen."}
-    }
-  ]
+ "version": 1,
+ "facts": [
+  {
+   "id": "physics-ice-floats",
+   "topic": "physics",
+   "level": 2,
+   "answer": 1,
+   "source": "USGS Water Science School",
+   "en": {
+    "title": "Why does ice float on water?",
+    "body": "When water freezes, its molecules lock into an open, six-sided pattern. That makes ice about 9% less dense than liquid water - so it floats.",
+    "question": "Ice is about how much less dense than liquid water?",
+    "options": [
+     "2%",
+     "9%",
+     "25%",
+     "50%"
+    ],
+    "explain": "The open six-sided pattern in ice takes up more space, so the same water weighs less per litre."
+   },
+   "nl": {
+    "title": "Waarom drijft ijs op water?",
+    "body": "Als water bevriest, schikken de moleculen zich in een open, zeshoekig patroon. Daardoor is ijs ongeveer 9% minder dicht dan vloeibaar water - en dus drijft het.",
+    "question": "Hoeveel minder dicht is ijs ongeveer dan vloeibaar water?",
+    "options": [
+     "2%",
+     "9%",
+     "25%",
+     "50%"
+    ],
+    "explain": "Het open zeshoekige patroon neemt meer ruimte in, dus hetzelfde water weegt minder per liter."
+   }
+  },
+  {
+   "id": "physics-blue-sky",
+   "topic": "physics",
+   "level": 1,
+   "answer": 1,
+   "source": "NASA Space Place",
+   "en": {
+    "title": "Why is the sky blue?",
+    "body": "Sunlight contains every colour. Tiny gas molecules in the air scatter short wavelengths much more than long ones, so blue light bounces all over the sky and reaches your eyes from every direction.",
+    "question": "Which colour of sunlight is scattered most by air?",
+    "options": [
+     "Red",
+     "Blue",
+     "Yellow",
+     "Orange"
+    ],
+    "explain": "Blue has a short wavelength, so air scatters it far more than red or yellow."
+   },
+   "nl": {
+    "title": "Waarom is de lucht blauw?",
+    "body": "Zonlicht bevat alle kleuren. Kleine gasmoleculen in de lucht verstrooien korte golflengtes veel sterker dan lange, dus blauw licht kaatst door de hele hemel en bereikt je ogen van alle kanten.",
+    "question": "Welke kleur zonlicht wordt het sterkst verstrooid door lucht?",
+    "options": [
+     "Rood",
+     "Blauw",
+     "Geel",
+     "Oranje"
+    ],
+    "explain": "Blauw heeft een korte golflengte, dus lucht verstrooit het veel meer dan rood of geel."
+   }
+  },
+  {
+   "id": "chemistry-salt-ice",
+   "topic": "chemistry",
+   "level": 1,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why does salt melt ice on roads?",
+    "body": "Salt dissolves in the thin layer of water on ice and lowers the temperature at which that water freezes. Below 0 °C the salty water stays liquid, so the ice melts away.",
+    "question": "What does salt do to the freezing point of water?",
+    "options": [
+     "Lowers it",
+     "Raises it",
+     "Nothing",
+     "Doubles it"
+    ],
+    "explain": "Dissolved salt gets in the way of water molecules forming ice, so water needs to be colder to freeze."
+   },
+   "nl": {
+    "title": "Waarom smelt strooizout ijs op de weg?",
+    "body": "Zout lost op in het dunne laagje water op het ijs en verlaagt de temperatuur waarbij dat water bevriest. Onder 0 °C blijft het zoute water vloeibaar, dus het ijs smelt weg.",
+    "question": "Wat doet zout met het vriespunt van water?",
+    "options": [
+     "Verlaagt het",
+     "Verhoogt het",
+     "Niets",
+     "Verdubbelt het"
+    ],
+    "explain": "Opgelost zout zit de watermoleculen in de weg bij het vormen van ijs, dus water moet kouder worden om te bevriezen."
+   }
+  },
+  {
+   "id": "chemistry-onion-tears",
+   "topic": "chemistry",
+   "level": 2,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why do onions make you cry?",
+    "body": "Cutting an onion breaks its cells and mixes chemicals that were kept apart. They react into a gas that drifts up, reaches your eyes and irritates them, so your eyes make tears to wash it away.",
+    "question": "What actually irritates your eyes when you cut an onion?",
+    "options": [
+     "A gas the onion releases",
+     "Onion juice splashing",
+     "The smell",
+     "Tiny onion fibres"
+    ],
+    "explain": "The irritating compound is a gas formed the moment the onion's cells are damaged."
+   },
+   "nl": {
+    "title": "Waarom moet je huilen van uien?",
+    "body": "Als je een ui snijdt, gaan de cellen kapot en mengen stoffen die eerst gescheiden waren. Die reageren tot een gas dat opstijgt, je ogen bereikt en ze prikkelt, dus je ogen maken tranen om het weg te spoelen.",
+    "question": "Wat prikkelt je ogen eigenlijk als je een ui snijdt?",
+    "options": [
+     "Een gas dat de ui afgeeft",
+     "Spattend uiensap",
+     "De geur",
+     "Kleine uienvezels"
+    ],
+    "explain": "De prikkelende stof is een gas dat ontstaat op het moment dat de cellen van de ui beschadigd raken."
+   }
+  },
+  {
+   "id": "math-divide-by-zero",
+   "topic": "math",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why can't you divide by zero?",
+    "body": "Dividing 6 by 2 asks: what times 2 gives 6? The answer is 3. Dividing 6 by 0 asks: what times 0 gives 6? No number works, because anything times 0 is 0.",
+    "question": "What do you get when you multiply any number by 0?",
+    "options": [
+     "The number itself",
+     "1",
+     "0",
+     "Infinity"
+    ],
+    "explain": "Anything times 0 is 0, so no number can turn 0 back into 6."
+   },
+   "nl": {
+    "title": "Waarom kun je niet delen door nul?",
+    "body": "6 gedeeld door 2 vraagt: wat keer 2 geeft 6? Het antwoord is 3. 6 gedeeld door 0 vraagt: wat keer 0 geeft 6? Geen enkel getal werkt, want alles keer 0 is 0.",
+    "question": "Wat krijg je als je een getal met 0 vermenigvuldigt?",
+    "options": [
+     "Het getal zelf",
+     "1",
+     "0",
+     "Oneindig"
+    ],
+    "explain": "Alles keer 0 is 0, dus geen enkel getal maakt van 0 weer 6."
+   }
+  },
+  {
+   "id": "math-birthday-paradox",
+   "topic": "math",
+   "level": 2,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "The birthday paradox",
+    "body": "In a group of just 23 people, the chance that two of them share a birthday is already above 50%. It feels too low, but with 23 people there are 253 different pairs that could match.",
+    "question": "How many people do you need for a better than 50% chance of a shared birthday?",
+    "options": [
+     "23",
+     "50",
+     "183",
+     "366"
+    ],
+    "explain": "23 people form 253 pairs, and each pair is another chance for a match."
+   },
+   "nl": {
+    "title": "De verjaardagsparadox",
+    "body": "In een groep van maar 23 mensen is de kans dat twee van hen op dezelfde dag jarig zijn al groter dan 50%. Het voelt te weinig, maar 23 mensen vormen 253 verschillende tweetallen die kunnen matchen.",
+    "question": "Hoeveel mensen heb je nodig voor meer dan 50% kans op een gedeelde verjaardag?",
+    "options": [
+     "23",
+     "50",
+     "183",
+     "366"
+    ],
+    "explain": "23 mensen vormen 253 tweetallen, en elk tweetal is een extra kans op een match."
+   }
+  },
+  {
+   "id": "biology-octopus-hearts",
+   "topic": "biology",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "How many hearts does an octopus have?",
+    "body": "Three. Two hearts pump blood through the gills and one pumps it around the rest of the body. Their blood is blue, because it carries oxygen with copper instead of iron.",
+    "question": "How many hearts does an octopus have?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "8"
+    ],
+    "explain": "Two gill hearts and one body heart - and the blood is blue thanks to copper."
+   },
+   "nl": {
+    "title": "Hoeveel harten heeft een octopus?",
+    "body": "Drie. Twee harten pompen bloed door de kieuwen en één pompt het door de rest van het lichaam. Het bloed is blauw, omdat het zuurstof vervoert met koper in plaats van ijzer.",
+    "question": "Hoeveel harten heeft een octopus?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "8"
+    ],
+    "explain": "Twee kieuwharten en één lichaamshart - en het bloed is blauw dankzij koper."
+   }
+  },
+  {
+   "id": "biology-autumn-leaves",
+   "topic": "biology",
+   "level": 2,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why do leaves change colour in autumn?",
+    "body": "Green chlorophyll breaks down as days get shorter. That reveals yellow and orange pigments that were in the leaf all along, while some trees also make new red pigments in autumn.",
+    "question": "Which pigment makes leaves green?",
+    "options": [
+     "Chlorophyll",
+     "Carotene",
+     "Melanin",
+     "Anthocyanin"
+    ],
+    "explain": "When chlorophyll fades, the yellow and orange carotenoids underneath become visible."
+   },
+   "nl": {
+    "title": "Waarom verkleuren bladeren in de herfst?",
+    "body": "Groen bladgroen breekt af als de dagen korter worden. Daardoor worden gele en oranje kleurstoffen zichtbaar die al die tijd in het blad zaten, en sommige bomen maken in de herfst ook nieuwe rode kleurstoffen.",
+    "question": "Welke kleurstof maakt bladeren groen?",
+    "options": [
+     "Bladgroen (chlorofyl)",
+     "Caroteen",
+     "Melanine",
+     "Anthocyaan"
+    ],
+    "explain": "Als het bladgroen verdwijnt, worden de gele en oranje carotenoïden eronder zichtbaar."
+   }
+  },
+  {
+   "id": "space-sunlight-time",
+   "topic": "space",
+   "level": 1,
+   "answer": 1,
+   "source": "NASA",
+   "en": {
+    "title": "How old is the sunlight you see?",
+    "body": "Light from the Sun takes about 8 minutes and 20 seconds to reach Earth. So when you look at a sunrise, you see the Sun as it was more than 8 minutes ago.",
+    "question": "How long does sunlight take to reach Earth?",
+    "options": [
+     "About 8 seconds",
+     "About 8 minutes",
+     "About 8 hours",
+     "About 8 days"
+    ],
+    "explain": "The Sun is about 150 million km away, and light covers that in roughly 8 minutes and 20 seconds."
+   },
+   "nl": {
+    "title": "Hoe oud is het zonlicht dat je ziet?",
+    "body": "Licht van de zon doet er ongeveer 8 minuten en 20 seconden over om de aarde te bereiken. Als je naar een zonsopkomst kijkt, zie je de zon dus zoals hij ruim 8 minuten geleden was.",
+    "question": "Hoe lang doet zonlicht erover om de aarde te bereiken?",
+    "options": [
+     "Ongeveer 8 seconden",
+     "Ongeveer 8 minuten",
+     "Ongeveer 8 uur",
+     "Ongeveer 8 dagen"
+    ],
+    "explain": "De zon staat zo'n 150 miljoen km weg, en licht legt dat af in ongeveer 8 minuten en 20 seconden."
+   }
+  },
+  {
+   "id": "space-venus-day",
+   "topic": "space",
+   "level": 2,
+   "answer": 0,
+   "source": "NASA",
+   "en": {
+    "title": "On Venus, a day lasts longer than a year",
+    "body": "Venus spins very slowly: one rotation takes about 243 Earth days. It orbits the Sun in about 225 Earth days, so a single spin takes longer than a whole trip around the Sun.",
+    "question": "On Venus, which takes longer?",
+    "options": [
+     "One rotation (a day)",
+     "One orbit (a year)",
+     "They are equal",
+     "Venus does not rotate"
+    ],
+    "explain": "About 243 Earth days to rotate once, but only about 225 to orbit the Sun."
+   },
+   "nl": {
+    "title": "Op Venus duurt een dag langer dan een jaar",
+    "body": "Venus draait heel langzaam om zijn as: één rondje duurt ongeveer 243 aardse dagen. Een rondje om de zon duurt ongeveer 225 aardse dagen, dus één keer draaien duurt langer dan een hele baan om de zon.",
+    "question": "Wat duurt op Venus langer?",
+    "options": [
+     "Eén keer om de as draaien (een dag)",
+     "Eén baan om de zon (een jaar)",
+     "Ze zijn even lang",
+     "Venus draait niet"
+    ],
+    "explain": "Ongeveer 243 aardse dagen om één keer te draaien, maar maar zo'n 225 om rond de zon te gaan."
+   }
+  },
+  {
+   "id": "language-quarantine",
+   "topic": "language",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "There is a number hidden in 'quarantine'",
+    "body": "In 14th-century Venice, ships arriving during plague outbreaks had to wait offshore for 40 days before anyone could land. 'Forty days' in Venetian Italian was 'quaranta giorni'.",
+    "question": "Which number is hidden in the word 'quarantine'?",
+    "options": [
+     "4",
+     "14",
+     "40",
+     "400"
+    ],
+    "explain": "From Italian 'quaranta giorni': forty days of isolation for arriving ships."
+   },
+   "nl": {
+    "title": "In 'quarantaine' zit een getal verstopt",
+    "body": "In het Venetië van de 14e eeuw moesten schepen tijdens pestuitbraken 40 dagen voor de kust wachten voordat iemand aan land mocht. 'Veertig dagen' was in het Italiaans 'quaranta giorni'.",
+    "question": "Welk getal zit verstopt in het woord 'quarantaine'?",
+    "options": [
+     "4",
+     "14",
+     "40",
+     "400"
+    ],
+    "explain": "Van het Italiaanse 'quaranta giorni': veertig dagen afzondering voor aankomende schepen."
+   }
+  },
+  {
+   "id": "language-robot",
+   "topic": "language",
+   "level": 2,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Where does the word 'robot' come from?",
+    "body": "It comes from the 1920 Czech play R.U.R. by Karel Čapek, about artificial workers. The word is based on the Czech 'robota', meaning forced labour.",
+    "question": "Which language gave us the word 'robot'?",
+    "options": [
+     "German",
+     "Czech",
+     "Japanese",
+     "Latin"
+    ],
+    "explain": "From Czech 'robota' (forced labour), made famous by Karel Čapek's 1920 play R.U.R."
+   },
+   "nl": {
+    "title": "Waar komt het woord 'robot' vandaan?",
+    "body": "Het komt uit het Tsjechische toneelstuk R.U.R. van Karel Čapek uit 1920, over kunstmatige arbeiders. Het woord is gebaseerd op het Tsjechische 'robota', dat dwangarbeid betekent.",
+    "question": "Uit welke taal komt het woord 'robot'?",
+    "options": [
+     "Duits",
+     "Tsjechisch",
+     "Japans",
+     "Latijn"
+    ],
+    "explain": "Van het Tsjechische 'robota' (dwangarbeid), bekend geworden door Čapeks toneelstuk R.U.R. uit 1920."
+   }
+  },
+  {
+   "id": "history-hundred-years-war",
+   "topic": "history",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "The Hundred Years' War didn't last 100 years",
+    "body": "The conflict between England and France ran from 1337 to 1453 - that is 116 years. It was not one long fight but a series of wars with long truces in between.",
+    "question": "How long did the Hundred Years' War actually last?",
+    "options": [
+     "90 years",
+     "100 years",
+     "116 years",
+     "150 years"
+    ],
+    "explain": "From 1337 to 1453: 116 years, with several long truces."
+   },
+   "nl": {
+    "title": "De Honderdjarige Oorlog duurde geen 100 jaar",
+    "body": "Het conflict tussen Engeland en Frankrijk liep van 1337 tot 1453 - dat is 116 jaar. Het was geen lange strijd maar een reeks oorlogen met lange bestanden ertussen.",
+    "question": "Hoe lang duurde de Honderdjarige Oorlog echt?",
+    "options": [
+     "90 jaar",
+     "100 jaar",
+     "116 jaar",
+     "150 jaar"
+    ],
+    "explain": "Van 1337 tot 1453: 116 jaar, met meerdere lange bestanden."
+   }
+  },
+  {
+   "id": "history-cleopatra",
+   "topic": "history",
+   "level": 2,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Cleopatra and the Moon landing",
+    "body": "The Great Pyramid of Giza was built around 2560 BC. Cleopatra died in 30 BC - about 2,500 years later. The Moon landing in 1969 came only about 2,000 years after her.",
+    "question": "Did Cleopatra live closer in time to the Great Pyramid or to the Moon landing?",
+    "options": [
+     "The Great Pyramid",
+     "The Moon landing",
+     "Exactly in between",
+     "She saw the pyramid being built"
+    ],
+    "explain": "About 2,500 years separate her from the pyramid, but only about 2,000 from the Moon landing."
+   },
+   "nl": {
+    "title": "Cleopatra en de maanlanding",
+    "body": "De Grote Piramide van Gizeh werd rond 2560 v.Chr. gebouwd. Cleopatra stierf in 30 v.Chr. - zo'n 2500 jaar later. De maanlanding in 1969 kwam maar ongeveer 2000 jaar na haar.",
+    "question": "Leefde Cleopatra in de tijd dichter bij de Grote Piramide of bij de maanlanding?",
+    "options": [
+     "De Grote Piramide",
+     "De maanlanding",
+     "Precies ertussenin",
+     "Ze zag de piramide bouwen"
+    ],
+    "explain": "Zo'n 2500 jaar scheidt haar van de piramide, maar maar zo'n 2000 van de maanlanding."
+   }
+  },
+  {
+   "id": "geography-time-zones",
+   "topic": "geography",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Which country has the most time zones?",
+    "body": "France - thanks to overseas territories like French Polynesia, Réunion and French Guiana it spans 12 time zones, more than Russia or the United States.",
+    "question": "Which country spans the most time zones?",
+    "options": [
+     "Russia",
+     "United States",
+     "France",
+     "China"
+    ],
+    "explain": "Its overseas territories spread France across 12 time zones."
+   },
+   "nl": {
+    "title": "Welk land heeft de meeste tijdzones?",
+    "body": "Frankrijk - dankzij overzeese gebieden zoals Frans-Polynesië, Réunion en Frans-Guyana beslaat het 12 tijdzones, meer dan Rusland of de Verenigde Staten.",
+    "question": "Welk land beslaat de meeste tijdzones?",
+    "options": [
+     "Rusland",
+     "Verenigde Staten",
+     "Frankrijk",
+     "China"
+    ],
+    "explain": "Door de overzeese gebieden ligt Frankrijk verspreid over 12 tijdzones."
+   }
+  },
+  {
+   "id": "geography-longest-coastline",
+   "topic": "geography",
+   "level": 2,
+   "answer": 3,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "The longest coastline in the world",
+    "body": "Canada's coastline is about 200,000 km long - long enough to circle the Earth roughly five times. Thousands of Arctic islands and deep inlets add up to that huge length.",
+    "question": "Which country has the longest coastline?",
+    "options": [
+     "Australia",
+     "Norway",
+     "Indonesia",
+     "Canada"
+    ],
+    "explain": "Canada's many Arctic islands and inlets give it roughly 200,000 km of coast."
+   },
+   "nl": {
+    "title": "De langste kustlijn ter wereld",
+    "body": "De kustlijn van Canada is ongeveer 200.000 km lang - genoeg om ruwweg vijf keer rond de aarde te gaan. Duizenden eilanden in het noordpoolgebied en diepe inhammen tellen op tot die enorme lengte.",
+    "question": "Welk land heeft de langste kustlijn?",
+    "options": [
+     "Australië",
+     "Noorwegen",
+     "Indonesië",
+     "Canada"
+    ],
+    "explain": "De vele poolgebied-eilanden en inhammen geven Canada zo'n 200.000 km kust."
+   }
+  },
+  {
+   "id": "psychology-tickle",
+   "topic": "psychology",
+   "level": 1,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why can't you tickle yourself?",
+    "body": "When you move, your brain predicts exactly what you will feel and turns the sensation down. Someone else's fingers are unpredictable, so the full tickle gets through.",
+    "question": "Why does tickling yourself not work?",
+    "options": [
+     "Your brain predicts the touch",
+     "Your skin is used to your hands",
+     "You press too softly",
+     "Only fingertips tickle"
+    ],
+    "explain": "Your brain predicts your own movements and dampens the feeling before it surprises you."
+   },
+   "nl": {
+    "title": "Waarom kun je jezelf niet kietelen?",
+    "body": "Als je beweegt, voorspelt je brein precies wat je gaat voelen en dempt het gevoel. De vingers van iemand anders zijn onvoorspelbaar, dus dan komt de volle kietel binnen.",
+    "question": "Waarom werkt jezelf kietelen niet?",
+    "options": [
+     "Je brein voorspelt de aanraking",
+     "Je huid is gewend aan je handen",
+     "Je drukt te zacht",
+     "Alleen vingertoppen kietelen"
+    ],
+    "explain": "Je brein voorspelt je eigen bewegingen en dempt het gevoel voordat het je kan verrassen."
+   }
+  },
+  {
+   "id": "psychology-zeigarnik",
+   "topic": "psychology",
+   "level": 2,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why unfinished tasks stick in your head",
+    "body": "In the 1920s psychologist Bluma Zeigarnik noticed that waiters remembered unpaid orders better than paid ones. People tend to remember interrupted tasks better than completed ones - now called the Zeigarnik effect.",
+    "question": "What does the Zeigarnik effect say?",
+    "options": [
+     "We forget unfinished tasks faster",
+     "We remember unfinished tasks better",
+     "We remember first impressions best",
+     "We remember faces better than names"
+    ],
+    "explain": "An unfinished task keeps your mind busy, so it stays easier to recall."
+   },
+   "nl": {
+    "title": "Waarom onafgemaakte taken in je hoofd blijven",
+    "body": "In de jaren 20 merkte psycholoog Bluma Zeigarnik dat obers onbetaalde bestellingen beter onthielden dan betaalde. Mensen onthouden onderbroken taken vaak beter dan afgeronde - dat heet nu het Zeigarnik-effect.",
+    "question": "Wat zegt het Zeigarnik-effect?",
+    "options": [
+     "We vergeten onafgemaakte taken sneller",
+     "We onthouden onafgemaakte taken beter",
+     "We onthouden eerste indrukken het best",
+     "We onthouden gezichten beter dan namen"
+    ],
+    "explain": "Een onafgemaakte taak houdt je hoofd bezig, dus je weet hem makkelijker terug."
+   }
+  },
+  {
+   "id": "money-compound-interest",
+   "topic": "money",
+   "level": 1,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Interest on your interest",
+    "body": "With compound interest you also earn interest on the interest you already got. €1,000 at 5% a year grows to about €1,629 after 10 years, not €1,500.",
+    "question": "€1,000 at 5% compound interest for 10 years becomes about…",
+    "options": [
+     "€1,500",
+     "€1,629",
+     "€2,000",
+     "€1,050"
+    ],
+    "explain": "1,000 × 1.05 ten times is about €1,629 - the extra €129 is interest on interest."
+   },
+   "nl": {
+    "title": "Rente op je rente",
+    "body": "Bij samengestelde rente krijg je ook rente over de rente die je al hebt gekregen. €1.000 tegen 5% per jaar groeit in 10 jaar naar ongeveer €1.629, niet naar €1.500.",
+    "question": "€1.000 tegen 5% samengestelde rente wordt na 10 jaar ongeveer…",
+    "options": [
+     "€1.500",
+     "€1.629",
+     "€2.000",
+     "€1.050"
+    ],
+    "explain": "1.000 × 1,05 tien keer is ongeveer €1.629 - de extra €129 is rente op rente."
+   }
+  },
+  {
+   "id": "money-rule-of-72",
+   "topic": "money",
+   "level": 2,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "The rule of 72",
+    "body": "To estimate how long money takes to double, divide 72 by the yearly interest rate. At 6% a year, your money doubles in about 72 / 6 = 12 years.",
+    "question": "At 8% a year, roughly how long until your money doubles?",
+    "options": [
+     "6 years",
+     "8 years",
+     "9 years",
+     "14 years"
+    ],
+    "explain": "72 / 8 = 9 years - a quick estimate that works well for normal interest rates."
+   },
+   "nl": {
+    "title": "De regel van 72",
+    "body": "Wil je schatten hoe lang het duurt voordat geld verdubbelt? Deel 72 door het rentepercentage per jaar. Bij 6% per jaar verdubbelt je geld in ongeveer 72 / 6 = 12 jaar.",
+    "question": "Bij 8% per jaar, hoe lang duurt het ongeveer tot je geld verdubbelt?",
+    "options": [
+     "6 jaar",
+     "8 jaar",
+     "9 jaar",
+     "14 jaar"
+    ],
+    "explain": "72 / 8 = 9 jaar - een snelle schatting die goed werkt bij normale rentes."
+   }
+  },
+  {
+   "id": "tech-computer-bug",
+   "topic": "tech",
+   "level": 1,
+   "answer": 3,
+   "source": "Smithsonian National Museum of American History",
+   "en": {
+    "title": "The first computer 'bug' was a real insect",
+    "body": "In 1947 engineers working on the Harvard Mark II computer found a moth stuck in a relay. They taped it into the logbook as the 'first actual case of bug being found'.",
+    "question": "What did engineers find inside the Harvard Mark II in 1947?",
+    "options": [
+     "A mouse",
+     "A spider",
+     "A beetle",
+     "A moth"
+    ],
+    "explain": "A moth trapped in a relay - the log page with the taped-in moth still exists."
+   },
+   "nl": {
+    "title": "De eerste computer-'bug' was een echt insect",
+    "body": "In 1947 vonden technici aan de Harvard Mark II-computer een mot die vastzat in een relais. Ze plakten hem in het logboek als 'het eerste echte geval van een gevonden bug'.",
+    "question": "Wat vonden technici in 1947 in de Harvard Mark II?",
+    "options": [
+     "Een muis",
+     "Een spin",
+     "Een kever",
+     "Een mot"
+    ],
+    "explain": "Een mot in een relais - de logboekpagina met de vastgeplakte mot bestaat nog steeds."
+   }
+  },
+  {
+   "id": "tech-byte",
+   "topic": "tech",
+   "level": 2,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why a byte holds 256 values",
+    "body": "A byte is 8 bits, and each bit is either 0 or 1. That gives 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256 combinations - which is why so many old games and colours stop at 255.",
+    "question": "How many different values can one byte hold?",
+    "options": [
+     "8",
+     "100",
+     "256",
+     "1,024"
+    ],
+    "explain": "8 bits with 2 options each: 2 to the power 8 = 256, counted from 0 to 255."
+   },
+   "nl": {
+    "title": "Waarom een byte 256 waarden heeft",
+    "body": "Een byte bestaat uit 8 bits, en elke bit is 0 of 1. Dat geeft 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256 combinaties - daarom stoppen zoveel oude games en kleuren bij 255.",
+    "question": "Hoeveel verschillende waarden kan één byte hebben?",
+    "options": [
+     "8",
+     "100",
+     "256",
+     "1.024"
+    ],
+    "explain": "8 bits met elk 2 opties: 2 tot de macht 8 = 256, geteld van 0 tot 255."
+   }
+  },
+  {
+   "id": "body-taller-morning",
+   "topic": "body",
+   "level": 1,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "You are taller in the morning",
+    "body": "During the day, gravity slowly squeezes the soft discs between the bones in your spine. Overnight, lying down, they soak up fluid again - so you wake up about a centimetre taller.",
+    "question": "Why are you taller in the morning?",
+    "options": [
+     "Spine discs recover overnight",
+     "Bones grow while you sleep",
+     "Muscles relax in your legs",
+     "Your feet swell less"
+    ],
+    "explain": "The discs between your vertebrae flatten by day and recover while you lie down."
+   },
+   "nl": {
+    "title": "Je bent 's ochtends langer",
+    "body": "Overdag drukt de zwaartekracht de zachte schijven tussen je wervels langzaam samen. 's Nachts, als je ligt, nemen ze weer vocht op - dus je wordt ongeveer een centimeter langer wakker.",
+    "question": "Waarom ben je 's ochtends langer?",
+    "options": [
+     "Tussenwervelschijven herstellen 's nachts",
+     "Botten groeien als je slaapt",
+     "Spieren in je benen ontspannen",
+     "Je voeten zijn minder dik"
+    ],
+    "explain": "De schijven tussen je wervels worden overdag platter en herstellen als je ligt."
+   }
+  },
+  {
+   "id": "body-stomach-acid",
+   "topic": "body",
+   "level": 2,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why your stomach doesn't digest itself",
+    "body": "Your stomach acid is strong enough to break down food, yet the stomach survives it. A thick layer of mucus protects the wall, and the cells of the lining are constantly replaced, every few days.",
+    "question": "What protects the stomach wall from its own acid?",
+    "options": [
+     "Nothing, it slowly dissolves",
+     "A layer of mucus",
+     "A shell of bone",
+     "Water you drink"
+    ],
+    "explain": "A thick mucus layer shields the wall, and the lining renews itself every few days."
+   },
+   "nl": {
+    "title": "Waarom je maag zichzelf niet verteert",
+    "body": "Je maagzuur is sterk genoeg om voedsel af te breken, toch overleeft je maag het. Een dikke slijmlaag beschermt de wand, en de cellen van de binnenbekleding worden voortdurend vervangen, om de paar dagen.",
+    "question": "Wat beschermt de maagwand tegen het eigen zuur?",
+    "options": [
+     "Niets, hij lost langzaam op",
+     "Een laag slijm",
+     "Een laag bot",
+     "Water dat je drinkt"
+    ],
+    "explain": "Een dikke slijmlaag schermt de wand af, en de binnenbekleding vernieuwt zich om de paar dagen."
+   }
+  },
+  {
+   "id": "physics-thunder-delay",
+   "topic": "physics",
+   "level": 1,
+   "answer": 1,
+   "source": "NOAA National Weather Service",
+   "en": {
+    "title": "Why you see lightning before you hear thunder",
+    "body": "Light travels about 300,000 km per second, sound only about 343 metres per second. So the flash reaches you almost instantly, while the bang takes about 3 seconds per kilometre.",
+    "question": "Thunder comes 3 seconds after the flash. Roughly how far away is the storm?",
+    "options": [
+     "100 metres",
+     "1 kilometre",
+     "3 kilometres",
+     "10 kilometres"
+    ],
+    "explain": "Sound covers about 343 metres per second, so 3 seconds is roughly 1 kilometre."
+   },
+   "nl": {
+    "title": "Waarom je bliksem eerder ziet dan je donder hoort",
+    "body": "Licht gaat ongeveer 300.000 km per seconde, geluid maar zo'n 343 meter per seconde. De flits is er dus vrijwel meteen, de knal doet ongeveer 3 seconden over elke kilometer.",
+    "question": "De donder komt 3 seconden na de flits. Hoe ver weg is het onweer ongeveer?",
+    "options": [
+     "100 meter",
+     "1 kilometer",
+     "3 kilometer",
+     "10 kilometer"
+    ],
+    "explain": "Geluid legt ongeveer 343 meter per seconde af, dus 3 seconden is ongeveer 1 kilometer."
+   }
+  },
+  {
+   "id": "physics-bent-spoon",
+   "topic": "physics",
+   "level": 1,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why a spoon looks bent in a glass of water",
+    "body": "Light slows down when it passes from air into water - to about three quarters of its speed in air. That change of speed bends the light at the surface, so your eyes see the spoon in the wrong place.",
+    "question": "What happens to light when it goes from air into water?",
+    "options": [
+     "It speeds up",
+     "It slows down",
+     "It stops",
+     "It turns into heat"
+    ],
+    "explain": "Light slows down in water. That bending at the surface is called refraction."
+   },
+   "nl": {
+    "title": "Waarom een lepel in een glas water geknikt lijkt",
+    "body": "Licht gaat langzamer als het van lucht naar water gaat - tot ongeveer driekwart van de snelheid in lucht. Door die snelheidsverandering buigt het licht aan het oppervlak af, dus je ogen zien de lepel op de verkeerde plek.",
+    "question": "Wat gebeurt er met licht als het van lucht naar water gaat?",
+    "options": [
+     "Het gaat sneller",
+     "Het gaat langzamer",
+     "Het stopt",
+     "Het wordt warmte"
+    ],
+    "explain": "Licht gaat langzamer in water. Dat afbuigen aan het oppervlak heet breking."
+   }
+  },
+  {
+   "id": "physics-lift-weight",
+   "topic": "physics",
+   "level": 2,
+   "answer": 1,
+   "source": "Khan Academy",
+   "en": {
+    "title": "Why you feel lighter in a lift going down",
+    "body": "When a lift starts moving down, it speeds up underneath you, so the floor pushes on you a little less. A bathroom scale in that lift would show less than your real weight - until the lift moves at a steady speed again.",
+    "question": "When does a scale in a lift show less than your weight?",
+    "options": [
+     "Moving up at a steady speed",
+     "Speeding up on the way down",
+     "Standing still",
+     "Moving down at a steady speed"
+    ],
+    "explain": "Only acceleration changes the reading. Speeding up downward makes the floor push less."
+   },
+   "nl": {
+    "title": "Waarom je je lichter voelt in een lift die naar beneden gaat",
+    "body": "Als een lift naar beneden begint te gaan, versnelt de vloer onder je, dus duwt hij iets minder hard tegen je aan. Een weegschaal in die lift zou minder aangeven dan je echte gewicht - tot de lift weer met constante snelheid gaat.",
+    "question": "Wanneer geeft een weegschaal in een lift minder aan dan je gewicht?",
+    "options": [
+     "Met constante snelheid omhoog",
+     "Versnellen naar beneden",
+     "Stilstaan",
+     "Met constante snelheid omlaag"
+    ],
+    "explain": "Alleen versnellen verandert wat de weegschaal zegt. Versnellen naar beneden laat de vloer minder hard duwen."
+   }
+  },
+  {
+   "id": "physics-metal-bench",
+   "topic": "physics",
+   "level": 2,
+   "answer": 1,
+   "source": "Physics Classroom",
+   "en": {
+    "title": "Why a metal bench feels colder than a wooden one",
+    "body": "On a cold day a metal bench and a wooden bench in the same spot are the same temperature. Metal just pulls heat out of your body much faster than wood does, so it feels colder.",
+    "question": "A metal and a wooden bench stand side by side on a cold day. Which is colder?",
+    "options": [
+     "The metal one",
+     "They are the same temperature",
+     "The wooden one",
+     "Whichever is darker"
+    ],
+    "explain": "They are equally cold. Metal conducts heat away from your skin faster, so it feels colder."
+   },
+   "nl": {
+    "title": "Waarom een metalen bankje kouder voelt dan een houten",
+    "body": "Op een koude dag hebben een metalen en een houten bankje op dezelfde plek dezelfde temperatuur. Metaal trekt alleen veel sneller warmte uit je lichaam dan hout, dus voelt het kouder.",
+    "question": "Een metalen en een houten bankje staan naast elkaar op een koude dag. Welke is kouder?",
+    "options": [
+     "Het metalen",
+     "Ze zijn even koud",
+     "Het houten",
+     "Het donkerste"
+    ],
+    "explain": "Ze zijn even koud. Metaal geleidt warmte sneller weg van je huid, dus voelt het kouder."
+   }
+  },
+  {
+   "id": "physics-skater-spin",
+   "topic": "physics",
+   "level": 3,
+   "answer": 1,
+   "source": "NASA Glenn Research Center",
+   "en": {
+    "title": "Why a skater spins faster with her arms pulled in",
+    "body": "A spinning skater keeps the same angular momentum. Pulling her arms in puts her mass closer to the centre, so she has to spin faster to keep that amount the same.",
+    "question": "What stays the same when a spinning skater pulls in her arms?",
+    "options": [
+     "Her spinning speed",
+     "Her angular momentum",
+     "The friction on the ice",
+     "Her height"
+    ],
+    "explain": "Angular momentum is conserved. Less spread-out mass means a faster spin."
+   },
+   "nl": {
+    "title": "Waarom een schaatser sneller draait met haar armen ingetrokken",
+    "body": "Een draaiende schaatser houdt hetzelfde impulsmoment. Als ze haar armen intrekt, zit haar massa dichter bij het midden, dus moet ze sneller draaien om dat gelijk te houden.",
+    "question": "Wat blijft gelijk als een draaiende schaatser haar armen intrekt?",
+    "options": [
+     "Haar draaisnelheid",
+     "Haar impulsmoment",
+     "De wrijving met het ijs",
+     "Haar lengte"
+    ],
+    "explain": "Het impulsmoment blijft behouden. Minder uitgespreide massa betekent sneller draaien."
+   }
+  },
+  {
+   "id": "physics-doppler-siren",
+   "topic": "physics",
+   "level": 3,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why a siren drops in pitch as it passes",
+    "body": "As an ambulance drives towards you, each sound wave starts a little closer, so the waves bunch up and the pitch sounds higher. As it drives away, the waves stretch out and the pitch drops. This is the Doppler effect.",
+    "question": "As the ambulance drives away from you, the siren sounds...",
+    "options": [
+     "Higher",
+     "Lower",
+     "Louder",
+     "Exactly the same"
+    ],
+    "explain": "Moving away stretches the sound waves, so the pitch drops."
+   },
+   "nl": {
+    "title": "Waarom een sirene lager klinkt als hij voorbij is",
+    "body": "Als een ambulance naar je toe rijdt, begint elke geluidsgolf iets dichterbij, dus worden de golven samengedrukt en klinkt de toon hoger. Rijdt hij weg, dan worden de golven uitgerekt en zakt de toon. Dat heet het dopplereffect.",
+    "question": "Als de ambulance van je wegrijdt, klinkt de sirene...",
+    "options": [
+     "Hoger",
+     "Lager",
+     "Harder",
+     "Precies hetzelfde"
+    ],
+    "explain": "Wegrijden rekt de geluidsgolven uit, dus zakt de toon."
+   }
+  },
+  {
+   "id": "chemistry-apple-brown",
+   "topic": "chemistry",
+   "level": 1,
+   "answer": 1,
+   "source": "Library of Congress - Everyday Mysteries",
+   "en": {
+    "title": "Why a cut apple turns brown",
+    "body": "When you cut an apple, an enzyme inside it meets oxygen from the air and makes brown pigments. A splash of lemon juice slows this down, because the acid makes the enzyme work much less well.",
+    "question": "What does lemon juice do to a cut apple?",
+    "options": [
+     "Makes it brown faster",
+     "Slows the browning",
+     "Makes it sweeter",
+     "Nothing at all"
+    ],
+    "explain": "The acid in lemon juice slows down the enzyme that causes browning."
+   },
+   "nl": {
+    "title": "Waarom een gesneden appel bruin wordt",
+    "body": "Als je een appel snijdt, komt een enzym in de appel in contact met zuurstof uit de lucht en maakt het bruine kleurstoffen. Een scheutje citroensap remt dat, omdat het zuur het enzym veel slechter laat werken.",
+    "question": "Wat doet citroensap met een gesneden appel?",
+    "options": [
+     "Het wordt sneller bruin",
+     "Het remt het bruin worden",
+     "Het wordt zoeter",
+     "Helemaal niets"
+    ],
+    "explain": "Het zuur in citroensap remt het enzym dat de appel bruin maakt."
+   }
+  },
+  {
+   "id": "chemistry-bread-rise",
+   "topic": "chemistry",
+   "level": 1,
+   "answer": 1,
+   "source": "King Arthur Baking",
+   "en": {
+    "title": "What makes bread rise?",
+    "body": "Yeast is a tiny living fungus. In bread dough it eats sugars and gives off carbon dioxide gas, which gets trapped in the stretchy dough as little bubbles. Baking then sets those bubbles in place.",
+    "question": "Which gas makes bread dough rise?",
+    "options": [
+     "Oxygen",
+     "Carbon dioxide",
+     "Nitrogen",
+     "Hydrogen"
+    ],
+    "explain": "Yeast turns sugar into carbon dioxide, which forms the bubbles in bread."
+   },
+   "nl": {
+    "title": "Waardoor rijst brood?",
+    "body": "Gist is een piepkleine levende schimmel. In brooddeeg eet hij suikers op en maakt hij koolstofdioxide, dat als belletjes vast komt te zitten in het rekbare deeg. Bij het bakken worden die belletjes vastgezet.",
+    "question": "Welk gas laat brooddeeg rijzen?",
+    "options": [
+     "Zuurstof",
+     "Koolstofdioxide",
+     "Stikstof",
+     "Waterstof"
+    ],
+    "explain": "Gist zet suiker om in koolstofdioxide, en dat vormt de gaatjes in brood."
+   }
+  },
+  {
+   "id": "chemistry-pure-water",
+   "topic": "chemistry",
+   "level": 2,
+   "answer": 1,
+   "source": "USGS Water Science School",
+   "en": {
+    "title": "Pure water barely conducts electricity",
+    "body": "Electricity in water is carried by ions: charged bits of dissolved salts and minerals. Perfectly pure water has almost none, so it is a poor conductor. Tap water and sea water conduct well because of what is dissolved in them.",
+    "question": "What makes tap water conduct electricity?",
+    "options": [
+     "The water molecules themselves",
+     "Dissolved salts and minerals",
+     "Its temperature",
+     "Air bubbles"
+    ],
+    "explain": "Dissolved salts form ions, and the ions carry the current."
+   },
+   "nl": {
+    "title": "Zuiver water geleidt nauwelijks stroom",
+    "body": "Stroom in water wordt gedragen door ionen: geladen deeltjes van opgeloste zouten en mineralen. Helemaal zuiver water heeft er bijna geen, dus geleidt het slecht. Kraanwater en zeewater geleiden goed door wat erin is opgelost.",
+    "question": "Waardoor geleidt kraanwater stroom?",
+    "options": [
+     "Door de watermoleculen zelf",
+     "Door opgeloste zouten en mineralen",
+     "Door de temperatuur",
+     "Door luchtbelletjes"
+    ],
+    "explain": "Opgeloste zouten vormen ionen, en die ionen dragen de stroom."
+   }
+  },
+  {
+   "id": "chemistry-warm-cola-flat",
+   "topic": "chemistry",
+   "level": 2,
+   "answer": 1,
+   "source": "American Chemical Society",
+   "en": {
+    "title": "Why warm cola goes flat faster",
+    "body": "The fizz in cola is carbon dioxide dissolved in the drink. A warm liquid can hold less dissolved gas than a cold one, so warm cola loses its bubbles much faster.",
+    "question": "Why does warm cola go flat faster?",
+    "options": [
+     "Warmth adds extra sugar",
+     "Warm liquid holds less dissolved gas",
+     "The can expands",
+     "Warm cola contains less water"
+    ],
+    "explain": "Gases dissolve better in cold liquids, so warm cola lets its carbon dioxide escape sooner."
+   },
+   "nl": {
+    "title": "Waarom warme cola sneller verschaald",
+    "body": "De prik in cola is koolstofdioxide dat in de drank is opgelost. Een warme vloeistof kan minder gas vasthouden dan een koude, dus warme cola verliest zijn belletjes veel sneller.",
+    "question": "Waarom verschaalt warme cola sneller?",
+    "options": [
+     "Warmte voegt suiker toe",
+     "Warme vloeistof houdt minder gas vast",
+     "Het blikje zet uit",
+     "Warme cola bevat minder water"
+    ],
+    "explain": "Gassen lossen beter op in koude vloeistof, dus warme cola laat zijn koolstofdioxide eerder ontsnappen."
+   }
+  },
+  {
+   "id": "chemistry-diamond-graphite",
+   "topic": "chemistry",
+   "level": 3,
+   "answer": 0,
+   "source": "Royal Society of Chemistry",
+   "en": {
+    "title": "Diamond and pencil lead are the same element",
+    "body": "Both are pure carbon. In diamond every carbon atom is locked to four others in a rigid 3D grid, which makes it extremely hard. In graphite the atoms form flat layers that slide over each other - perfect for writing. And pencil 'lead' contains no lead at all.",
+    "question": "What are both diamond and graphite made of?",
+    "options": [
+     "Carbon",
+     "Silicon",
+     "Lead",
+     "Iron"
+    ],
+    "explain": "Both are carbon; only the way the atoms are arranged is different."
+   },
+   "nl": {
+    "title": "Diamant en potloodstift zijn hetzelfde element",
+    "body": "Allebei zijn ze puur koolstof. In diamant zit elk koolstofatoom vast aan vier andere in een stevig 3D-rooster, en daardoor is het extreem hard. In grafiet vormen de atomen platte laagjes die over elkaar schuiven - ideaal om mee te schrijven.",
+    "question": "Waar zijn diamant en grafiet allebei van gemaakt?",
+    "options": [
+     "Koolstof",
+     "Silicium",
+     "Lood",
+     "IJzer"
+    ],
+    "explain": "Allebei zijn ze koolstof; alleen de rangschikking van de atomen verschilt."
+   }
+  },
+  {
+   "id": "chemistry-rust-salt",
+   "topic": "chemistry",
+   "level": 3,
+   "answer": 0,
+   "source": "Corrosion Doctors / NACE",
+   "en": {
+    "title": "Why cars rust faster near the sea",
+    "body": "Iron rusts when it reacts with oxygen and water. Salt dissolved in that water carries electric charge more easily, which speeds the reaction up. That's why road salt and sea air are so hard on cars.",
+    "question": "Which of these makes iron rust fastest?",
+    "options": [
+     "Salt water",
+     "Dry air",
+     "A coat of oil",
+     "A vacuum"
+    ],
+    "explain": "Rust needs water and oxygen, and dissolved salt speeds the reaction up."
+   },
+   "nl": {
+    "title": "Waarom auto's aan zee sneller roesten",
+    "body": "IJzer roest als het reageert met zuurstof en water. Zout dat in dat water is opgelost geleidt elektrische lading makkelijker, en dat versnelt de reactie. Daarom zijn strooizout en zeelucht zo slecht voor auto's.",
+    "question": "Waardoor roest ijzer het snelst?",
+    "options": [
+     "Zout water",
+     "Droge lucht",
+     "Een laagje olie",
+     "Een vacuüm"
+    ],
+    "explain": "Roest heeft water en zuurstof nodig, en opgelost zout versnelt de reactie."
+   }
+  },
+  {
+   "id": "math-360-degrees",
+   "topic": "math",
+   "level": 1,
+   "answer": 1,
+   "source": "Mathematical Association of America",
+   "en": {
+    "title": "Why a circle has 360 degrees",
+    "body": "The idea likely goes back to the ancient Babylonians, who counted in base 60. 360 is also close to the number of days in a year, and it divides neatly by 2, 3, 4, 5, 6, 8, 9, 10 and 12.",
+    "question": "Which number system did the Babylonians use?",
+    "options": [
+     "Base 10",
+     "Base 60",
+     "Base 2",
+     "Base 12"
+    ],
+    "explain": "The Babylonians counted in base 60 - which is also why an hour has 60 minutes."
+   },
+   "nl": {
+    "title": "Waarom een cirkel 360 graden heeft",
+    "body": "Het idee gaat waarschijnlijk terug op de oude Babyloniërs, die rekenden met grondtal 60. 360 ligt ook dicht bij het aantal dagen in een jaar, en het is netjes deelbaar door 2, 3, 4, 5, 6, 8, 9, 10 en 12.",
+    "question": "Met welk grondtal rekenden de Babyloniërs?",
+    "options": [
+     "10",
+     "60",
+     "2",
+     "12"
+    ],
+    "explain": "De Babyloniërs rekenden met 60 - daarom heeft een uur ook 60 minuten."
+   }
+  },
+  {
+   "id": "math-googol",
+   "topic": "math",
+   "level": 1,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Where the word 'googol' comes from",
+    "body": "A googol is a 1 followed by 100 zeros. The name was made up around 1920 by 9-year-old Milton Sirotta, nephew of mathematician Edward Kasner. Google's name is a play on it.",
+    "question": "How many zeros does a googol have?",
+    "options": [
+     "10",
+     "100",
+     "1,000",
+     "1 million"
+    ],
+    "explain": "A googol is 10 to the power 100: a 1 with 100 zeros."
+   },
+   "nl": {
+    "title": "Waar het woord 'googol' vandaan komt",
+    "body": "Een googol is een 1 met 100 nullen. De naam werd rond 1920 bedacht door de 9-jarige Milton Sirotta, neefje van wiskundige Edward Kasner. De naam Google is erop gebaseerd.",
+    "question": "Hoeveel nullen heeft een googol?",
+    "options": [
+     "10",
+     "100",
+     "1.000",
+     "1 miljoen"
+    ],
+    "explain": "Een googol is 10 tot de macht 100: een 1 met 100 nullen."
+   }
+  },
+  {
+   "id": "math-point-nine",
+   "topic": "math",
+   "level": 2,
+   "answer": 1,
+   "source": "Stanford Encyclopedia - Mathematics outreach",
+   "en": {
+    "title": "0.999... is exactly 1",
+    "body": "One third is 0.333... repeating forever. Multiply both sides by 3 and you get 1 = 0.999... repeating. There is no number in between them, so they are the same number written two ways.",
+    "question": "What is 0.333... (repeating) times 3?",
+    "options": [
+     "Slightly less than 1",
+     "Exactly 1",
+     "Slightly more than 1",
+     "It can't be calculated"
+    ],
+    "explain": "0.333... is exactly 1/3, so three of them make exactly 1."
+   },
+   "nl": {
+    "title": "0,999... is precies 1",
+    "body": "Een derde is 0,333... eindeloos herhaald. Keer je dat met 3, dan krijg je 1 = 0,999... eindeloos. Er zit geen getal tussen, dus het is hetzelfde getal op twee manieren geschreven.",
+    "question": "Wat is 0,333... (herhalend) keer 3?",
+    "options": [
+     "Iets minder dan 1",
+     "Precies 1",
+     "Iets meer dan 1",
+     "Dat kun je niet uitrekenen"
+    ],
+    "explain": "0,333... is precies 1/3, dus drie keer dat is precies 1."
+   }
+  },
+  {
+   "id": "math-paper-fold",
+   "topic": "math",
+   "level": 2,
+   "answer": 0,
+   "source": "NRICH, University of Cambridge",
+   "en": {
+    "title": "Fold paper 42 times to reach the Moon",
+    "body": "Each fold doubles the thickness. A sheet 0.1 mm thick folded 42 times would be about 440,000 km thick - more than the 384,000 km to the Moon. In practice you can't fold real paper more than about 7 to 12 times.",
+    "question": "What happens to the thickness each time you fold the paper?",
+    "options": [
+     "It doubles",
+     "It goes up by 0.1 mm",
+     "It triples",
+     "It stays the same"
+    ],
+    "explain": "Doubling 42 times multiplies the thickness by about 4.4 trillion."
+   },
+   "nl": {
+    "title": "Papier 42 keer vouwen en je bent bij de maan",
+    "body": "Elke vouw verdubbelt de dikte. Een vel van 0,1 mm dat je 42 keer vouwt, zou zo'n 440.000 km dik zijn - meer dan de 384.000 km naar de maan. In het echt lukt het niet om papier vaker dan zo'n 7 tot 12 keer te vouwen.",
+    "question": "Wat gebeurt er met de dikte bij elke vouw?",
+    "options": [
+     "Die verdubbelt",
+     "Die groeit 0,1 mm",
+     "Die verdrievoudigt",
+     "Die blijft gelijk"
+    ],
+    "explain": "42 keer verdubbelen maakt het ongeveer 4,4 biljoen keer zo dik."
+   }
+  },
+  {
+   "id": "math-infinite-primes",
+   "topic": "math",
+   "level": 3,
+   "answer": 0,
+   "source": "Euclid, Elements, Book IX",
+   "en": {
+    "title": "Why the primes never run out",
+    "body": "Over 2,000 years ago Euclid showed it: take any list of primes, multiply them all and add 1. That new number can't be divided by any prime on your list, so there must always be another prime you missed.",
+    "question": "Who first proved there are infinitely many primes?",
+    "options": [
+     "Euclid",
+     "Pythagoras",
+     "Newton",
+     "Euler"
+    ],
+    "explain": "Euclid's proof from around 300 BC is still taught today."
+   },
+   "nl": {
+    "title": "Waarom priemgetallen nooit opraken",
+    "body": "Ruim 2.000 jaar geleden liet Euclides het zien: neem een lijst priemgetallen, vermenigvuldig ze allemaal en tel er 1 bij op. Dat nieuwe getal is door geen enkel priemgetal uit je lijst deelbaar, dus er moet altijd nog een priemgetal zijn.",
+    "question": "Wie bewees als eerste dat er oneindig veel priemgetallen zijn?",
+    "options": [
+     "Euclides",
+     "Pythagoras",
+     "Newton",
+     "Euler"
+    ],
+    "explain": "Het bewijs van Euclides uit rond 300 v.Chr. wordt nog steeds onderwezen."
+   }
+  },
+  {
+   "id": "math-monty-hall",
+   "topic": "math",
+   "level": 3,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Always switch doors",
+    "body": "Behind one of three doors is a car. You pick one, then the host - who knows - opens another door with a goat. Switching now wins 2 out of 3 times, because your first pick was only right 1 time in 3.",
+    "question": "If you switch doors, how often do you win?",
+    "options": [
+     "1 in 3",
+     "1 in 2",
+     "2 in 3",
+     "Always"
+    ],
+    "explain": "Your first door wins 1/3 of the time, so the other closed door wins 2/3."
+   },
+   "nl": {
+    "title": "Wissel altijd van deur",
+    "body": "Achter één van drie deuren staat een auto. Je kiest er een, en de presentator - die het weet - opent een andere deur met een geit. Wisselen wint nu 2 van de 3 keer, want je eerste keuze was maar 1 op 3 keer goed.",
+    "question": "Hoe vaak win je als je wisselt?",
+    "options": [
+     "1 op 3",
+     "1 op 2",
+     "2 op 3",
+     "Altijd"
+    ],
+    "explain": "Je eerste deur wint 1/3 van de keren, dus de andere dichte deur wint 2/3."
+   }
+  },
+  {
+   "id": "biology-banana-berry",
+   "topic": "biology",
+   "level": 1,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "A banana is a berry, a strawberry is not",
+    "body": "To a botanist, a berry grows from one flower with one ovary and has seeds inside. Bananas, tomatoes and grapes fit. Strawberries don't: their 'seeds' sit on the outside and are actually tiny fruits.",
+    "question": "Which of these is a berry to a botanist?",
+    "options": [
+     "Strawberry",
+     "Banana",
+     "Raspberry",
+     "Cherry"
+    ],
+    "explain": "Bananas grow from a single ovary with seeds inside - a true berry."
+   },
+   "nl": {
+    "title": "Een banaan is een bes, een aardbei niet",
+    "body": "Voor een plantkundige groeit een bes uit één bloem met één vruchtbeginsel en zitten de zaden binnenin. Bananen, tomaten en druiven passen daarin. Aardbeien niet: hun 'pitjes' zitten aan de buitenkant en zijn eigenlijk piepkleine vruchtjes.",
+    "question": "Welke hiervan is voor een plantkundige een bes?",
+    "options": [
+     "Aardbei",
+     "Banaan",
+     "Framboos",
+     "Kers"
+    ],
+    "explain": "Een banaan groeit uit één vruchtbeginsel met zaden binnenin - een echte bes."
+   }
+  },
+  {
+   "id": "biology-bee-dance",
+   "topic": "biology",
+   "level": 1,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Bees dance to give directions",
+    "body": "A honeybee that finds food returns to the hive and does a 'waggle dance'. The angle of the dance shows the direction compared to the sun, and how long she waggles shows how far away the food is.",
+    "question": "What does the waggle dance tell other bees?",
+    "options": [
+     "That the hive is in danger",
+     "Where to find food",
+     "Who the queen is",
+     "That it will rain"
+    ],
+    "explain": "The angle points the way and the length of the waggle tells the distance."
+   },
+   "nl": {
+    "title": "Bijen dansen om de weg te wijzen",
+    "body": "Een honingbij die voedsel vindt, gaat terug naar de kast en doet een 'kwispeldans'. De hoek van de dans geeft de richting aan ten opzichte van de zon, en hoe lang ze kwispelt laat zien hoe ver het voedsel is.",
+    "question": "Wat vertelt de kwispeldans aan andere bijen?",
+    "options": [
+     "Dat de kast in gevaar is",
+     "Waar ze voedsel vinden",
+     "Wie de koningin is",
+     "Dat het gaat regenen"
+    ],
+    "explain": "De hoek wijst de richting en de duur van het kwispelen geeft de afstand."
+   }
+  },
+  {
+   "id": "biology-green-plants",
+   "topic": "biology",
+   "level": 2,
+   "answer": 2,
+   "source": "NASA Earth Observatory",
+   "en": {
+    "title": "Why plants are green",
+    "body": "Leaves are full of chlorophyll, which soaks up mostly red and blue light to make food. Green light is used least and bounces back to your eyes, so leaves look green.",
+    "question": "Which colour of light do plants use least?",
+    "options": [
+     "Red",
+     "Blue",
+     "Green",
+     "Violet"
+    ],
+    "explain": "Chlorophyll reflects green light instead of using it."
+   },
+   "nl": {
+    "title": "Waarom planten groen zijn",
+    "body": "Bladeren zitten vol bladgroen, dat vooral rood en blauw licht opneemt om voedsel te maken. Groen licht wordt het minst gebruikt en kaatst terug naar je ogen, dus zien bladeren er groen uit.",
+    "question": "Welke kleur licht gebruiken planten het minst?",
+    "options": [
+     "Rood",
+     "Blauw",
+     "Groen",
+     "Violet"
+    ],
+    "explain": "Bladgroen weerkaatst groen licht in plaats van het te gebruiken."
+   }
+  },
+  {
+   "id": "biology-tardigrades",
+   "topic": "biology",
+   "level": 2,
+   "answer": 0,
+   "source": "European Space Agency",
+   "en": {
+    "title": "The animal that survived open space",
+    "body": "Tardigrades, or water bears, are about half a millimetre long. When they dry out they curl into a 'tun' and almost stop living. In 2007 some survived 10 days outside a spacecraft and came back to life.",
+    "question": "How do tardigrades survive drying out?",
+    "options": [
+     "They curl up and almost shut down",
+     "They grow a shell",
+     "They dig underground",
+     "They drink their own blood"
+    ],
+    "explain": "In the 'tun' state their metabolism nearly stops until water returns."
+   },
+   "nl": {
+    "title": "Het dier dat de open ruimte overleefde",
+    "body": "Beerdiertjes zijn ongeveer een halve millimeter lang. Als ze uitdrogen, rollen ze zich op tot een 'tonnetje' en leven ze bijna niet meer. In 2007 overleefden er een paar 10 dagen buiten een ruimtevaartuig en kwamen ze weer tot leven.",
+    "question": "Hoe overleven beerdiertjes uitdroging?",
+    "options": [
+     "Ze rollen zich op en vallen bijna stil",
+     "Ze laten een schild groeien",
+     "Ze graven zich in",
+     "Ze drinken hun eigen bloed"
+    ],
+    "explain": "Als tonnetje stopt hun stofwisseling bijna, tot er weer water is."
+   }
+  },
+  {
+   "id": "biology-mito-dna",
+   "topic": "biology",
+   "level": 3,
+   "answer": 1,
+   "source": "National Human Genome Research Institute",
+   "en": {
+    "title": "You get a special kind of DNA only from your mother",
+    "body": "Mitochondria, the power plants in your cells, carry their own small set of DNA. You inherit it almost entirely from your mother, which lets scientists trace family lines far back in time.",
+    "question": "From whom do you inherit your mitochondrial DNA?",
+    "options": [
+     "Your father",
+     "Your mother",
+     "Both equally",
+     "Neither, it's new"
+    ],
+    "explain": "Mitochondria come from the egg cell, so this DNA passes down the mother's line."
+   },
+   "nl": {
+    "title": "Een bijzonder soort DNA krijg je alleen van je moeder",
+    "body": "Mitochondriën, de energiecentrales in je cellen, hebben hun eigen kleine stukje DNA. Dat erf je vrijwel alleen van je moeder, waardoor wetenschappers stambomen ver terug in de tijd kunnen volgen.",
+    "question": "Van wie erf je je mitochondriaal DNA?",
+    "options": [
+     "Van je vader",
+     "Van je moeder",
+     "Van allebei evenveel",
+     "Van niemand, het is nieuw"
+    ],
+    "explain": "Mitochondriën komen uit de eicel, dus dit DNA gaat via de moederlijn."
+   }
+  },
+  {
+   "id": "biology-axolotl",
+   "topic": "biology",
+   "level": 3,
+   "answer": 0,
+   "source": "Smithsonian Magazine",
+   "en": {
+    "title": "The salamander that regrows its legs",
+    "body": "The axolotl, a Mexican salamander, can regrow a lost leg completely - bones, muscles and nerves included. It can even repair parts of its spinal cord and heart, which is why scientists study it closely.",
+    "question": "Which animal can regrow a whole lost leg?",
+    "options": [
+     "Axolotl",
+     "Cat",
+     "Eagle",
+     "Dolphin"
+    ],
+    "explain": "Axolotls rebuild complete limbs, a rare ability among animals with backbones."
+   },
+   "nl": {
+    "title": "De salamander die zijn poten teruggroeit",
+    "body": "De axolotl, een Mexicaanse salamander, kan een verloren poot helemaal teruggroeien - met botten, spieren en zenuwen. Hij kan zelfs delen van zijn ruggenmerg en hart herstellen, en daarom bestuderen wetenschappers hem graag.",
+    "question": "Welk dier kan een hele verloren poot teruggroeien?",
+    "options": [
+     "Axolotl",
+     "Kat",
+     "Arend",
+     "Dolfijn"
+    ],
+    "explain": "Axolotls bouwen complete ledematen opnieuw op, iets wat bijna geen gewerveld dier kan."
+   }
+  },
+  {
+   "id": "space-no-sound",
+   "topic": "space",
+   "level": 1,
+   "answer": 2,
+   "source": "NASA",
+   "en": {
+    "title": "Space is completely silent",
+    "body": "Sound is a vibration that travels through air, water or solid things. Space is almost empty, so there is nothing to carry the vibration. An explosion there would make no sound at all.",
+    "question": "Why can't sound travel through space?",
+    "options": [
+     "It's too cold",
+     "It's too dark",
+     "There is no air to carry it",
+     "Sound moves too slowly"
+    ],
+    "explain": "Sound needs something to vibrate, like air, and space has almost nothing."
+   },
+   "nl": {
+    "title": "In de ruimte is het helemaal stil",
+    "body": "Geluid is een trilling die door lucht, water of vaste stoffen gaat. De ruimte is bijna leeg, dus is er niets om de trilling door te geven. Een explosie zou daar geen enkel geluid maken.",
+    "question": "Waarom kan geluid niet door de ruimte reizen?",
+    "options": [
+     "Het is te koud",
+     "Het is te donker",
+     "Er is geen lucht om het door te geven",
+     "Geluid gaat te langzaam"
+    ],
+    "explain": "Geluid heeft iets nodig dat trilt, zoals lucht, en de ruimte is bijna leeg."
+   }
+  },
+  {
+   "id": "space-moon-drift",
+   "topic": "space",
+   "level": 1,
+   "answer": 1,
+   "source": "NASA Lunar Laser Ranging",
+   "en": {
+    "title": "The Moon is slowly drifting away",
+    "body": "Astronauts left mirrors on the Moon, and scientists bounce lasers off them. That shows the Moon moves about 3.8 cm further from Earth every year - roughly as fast as your fingernails grow.",
+    "question": "How fast is the Moon moving away from Earth?",
+    "options": [
+     "About 1 mm a year",
+     "About 3.8 cm a year",
+     "About 1 metre a year",
+     "About 1 km a year"
+    ],
+    "explain": "Laser measurements show about 3.8 cm every year."
+   },
+   "nl": {
+    "title": "De maan drijft langzaam weg",
+    "body": "Astronauten lieten spiegels achter op de maan, en wetenschappers kaatsen er lasers op. Zo zien ze dat de maan elk jaar ongeveer 3,8 cm verder van de aarde komt - ongeveer zo snel als je nagels groeien.",
+    "question": "Hoe snel beweegt de maan van de aarde weg?",
+    "options": [
+     "Ongeveer 1 mm per jaar",
+     "Ongeveer 3,8 cm per jaar",
+     "Ongeveer 1 meter per jaar",
+     "Ongeveer 1 km per jaar"
+    ],
+    "explain": "Lasermetingen laten ongeveer 3,8 cm per jaar zien."
+   }
+  },
+  {
+   "id": "space-moon-face",
+   "topic": "space",
+   "level": 2,
+   "answer": 1,
+   "source": "NASA Science",
+   "en": {
+    "title": "Why we always see the same side of the Moon",
+    "body": "The Moon does spin, but exactly once for every trip around Earth - about 27 days. Earth's gravity locked it into that rhythm long ago, so the same side always faces us.",
+    "question": "How long does the Moon take to spin once on its axis?",
+    "options": [
+     "1 day",
+     "About 27 days",
+     "1 year",
+     "It doesn't spin"
+    ],
+    "explain": "One spin per orbit, about 27 days, keeps the same side facing Earth."
+   },
+   "nl": {
+    "title": "Waarom we altijd dezelfde kant van de maan zien",
+    "body": "De maan draait wel, maar precies één keer per rondje om de aarde - ongeveer 27 dagen. De zwaartekracht van de aarde heeft hem lang geleden in dat ritme vastgezet, dus wijst steeds dezelfde kant naar ons.",
+    "question": "Hoe lang doet de maan erover om één keer om zijn as te draaien?",
+    "options": [
+     "1 dag",
+     "Ongeveer 27 dagen",
+     "1 jaar",
+     "Hij draait niet"
+    ],
+    "explain": "Eén draai per rondje, ongeveer 27 dagen, houdt dezelfde kant naar de aarde."
+   }
+  },
+  {
+   "id": "space-neutron-star",
+   "topic": "space",
+   "level": 2,
+   "answer": 2,
+   "source": "NASA Goddard",
+   "en": {
+    "title": "A teaspoon of neutron star",
+    "body": "A neutron star packs more mass than our Sun into a ball about 20 km across. It's so dense that one teaspoon of it would weigh around a billion tonnes on Earth.",
+    "question": "About how much would a teaspoon of neutron star weigh on Earth?",
+    "options": [
+     "1 kilogram",
+     "1 tonne",
+     "A billion tonnes",
+     "Nothing"
+    ],
+    "explain": "Neutron stars squeeze a Sun's worth of mass into a city-sized ball."
+   },
+   "nl": {
+    "title": "Een theelepel neutronenster",
+    "body": "Een neutronenster propt meer massa dan onze zon in een bol van zo'n 20 km doorsnee. Hij is zo dicht dat één theelepel ervan op aarde ongeveer een miljard ton zou wegen.",
+    "question": "Hoeveel zou een theelepel neutronenster op aarde ongeveer wegen?",
+    "options": [
+     "1 kilo",
+     "1 ton",
+     "Een miljard ton",
+     "Niets"
+    ],
+    "explain": "Neutronensterren persen de massa van een zon in een bol zo groot als een stad."
+   }
+  },
+  {
+   "id": "space-mars-red",
+   "topic": "space",
+   "level": 3,
+   "answer": 0,
+   "source": "NASA Mars Exploration",
+   "en": {
+    "title": "Why Mars is red",
+    "body": "The surface of Mars is covered in dust that contains iron oxide - basically rust. That fine rusty dust also floats in its thin air, which tints the Martian sky a butterscotch colour.",
+    "question": "What gives Mars its red colour?",
+    "options": [
+     "Iron oxide, or rust",
+     "Red plants",
+     "Lava",
+     "Reflected sunlight from Earth"
+    ],
+    "explain": "Iron-rich dust has oxidised, just like rust on old metal."
+   },
+   "nl": {
+    "title": "Waarom Mars rood is",
+    "body": "Het oppervlak van Mars ligt vol stof met ijzeroxide - eigenlijk gewoon roest. Dat fijne roeststof zweeft ook in de dunne lucht, waardoor de lucht op Mars een karamelkleur heeft.",
+    "question": "Waardoor is Mars rood?",
+    "options": [
+     "IJzeroxide, oftewel roest",
+     "Rode planten",
+     "Lava",
+     "Teruggekaatst licht van de aarde"
+    ],
+    "explain": "IJzerrijk stof is geoxideerd, net als roest op oud metaal."
+   }
+  },
+  {
+   "id": "space-saturn-float",
+   "topic": "space",
+   "level": 3,
+   "answer": 1,
+   "source": "NASA Science",
+   "en": {
+    "title": "Saturn would float in a big enough bath",
+    "body": "Saturn is mostly hydrogen and helium. Its average density is only about 0.69 grams per cubic centimetre, lower than water's 1.0. So in a giant enough ocean, it would float.",
+    "question": "How does Saturn's average density compare to water?",
+    "options": [
+     "Higher",
+     "Lower",
+     "Exactly the same",
+     "Ten times higher"
+    ],
+    "explain": "At about 0.69 g/cm³, Saturn is less dense than water."
+   },
+   "nl": {
+    "title": "Saturnus zou drijven in een groot genoeg bad",
+    "body": "Saturnus bestaat vooral uit waterstof en helium. Zijn gemiddelde dichtheid is maar ongeveer 0,69 gram per kubieke centimeter, minder dan de 1,0 van water. In een reusachtige oceaan zou hij dus blijven drijven.",
+    "question": "Hoe verhoudt de gemiddelde dichtheid van Saturnus zich tot water?",
+    "options": [
+     "Hoger",
+     "Lager",
+     "Precies gelijk",
+     "Tien keer hoger"
+    ],
+    "explain": "Met ongeveer 0,69 g/cm³ is Saturnus minder dicht dan water."
+   }
+  },
+  {
+   "id": "language-alphabet",
+   "topic": "language",
+   "level": 1,
+   "answer": 1,
+   "source": "Merriam-Webster",
+   "en": {
+    "title": "Where 'alphabet' comes from",
+    "body": "The word comes from alpha and beta, the first two letters of the Greek alphabet. It's a bit like calling it the 'A-B'.",
+    "question": "Which language gave us the letters alpha and beta?",
+    "options": [
+     "Latin",
+     "Greek",
+     "Hebrew",
+     "Arabic"
+    ],
+    "explain": "Alpha and beta are the first two Greek letters."
+   },
+   "nl": {
+    "title": "Waar 'alfabet' vandaan komt",
+    "body": "Het woord komt van alfa en bèta, de eerste twee letters van het Griekse alfabet. Een beetje alsof je het 'het A-B' noemt.",
+    "question": "Uit welke taal komen de letters alfa en bèta?",
+    "options": [
+     "Latijn",
+     "Grieks",
+     "Hebreeuws",
+     "Arabisch"
+    ],
+    "explain": "Alfa en bèta zijn de eerste twee Griekse letters."
+   }
+  },
+  {
+   "id": "language-ok",
+   "topic": "language",
+   "level": 1,
+   "answer": 2,
+   "source": "Merriam-Webster",
+   "en": {
+    "title": "'OK' started as a joke",
+    "body": "In 1839 Boston newspapers had a fad for jokey abbreviations of misspelled phrases. 'O.K.' stood for 'oll korrect', a deliberate misspelling of 'all correct'. It became one of the most used words in the world.",
+    "question": "What did 'OK' originally stand for?",
+    "options": [
+     "Only kidding",
+     "Old Kinderhook",
+     "Oll korrect",
+     "Okay keep"
+    ],
+    "explain": "It was a jokey spelling of 'all correct' in an 1839 newspaper."
+   },
+   "nl": {
+    "title": "'OK' begon als grapje",
+    "body": "In 1839 hadden kranten in Boston een rage met grappige afkortingen van verkeerd gespelde zinnetjes. 'O.K.' stond voor 'oll korrect', een expres foute spelling van 'all correct'. Het werd een van de meest gebruikte woorden ter wereld.",
+    "question": "Waar stond 'OK' oorspronkelijk voor?",
+    "options": [
+     "Only kidding",
+     "Old Kinderhook",
+     "Oll korrect",
+     "Okay keep"
+    ],
+    "explain": "Het was een grappige spelling van 'all correct' in een krant uit 1839."
+   }
+  },
+  {
+   "id": "language-salary",
+   "topic": "language",
+   "level": 2,
+   "answer": 1,
+   "source": "Oxford English Dictionary",
+   "en": {
+    "title": "There is salt in your salary",
+    "body": "'Salary' comes from the Latin salarium, which is linked to sal, meaning salt. Salt was precious in Roman times, but exactly why the payment was named after it is still debated.",
+    "question": "Which Latin word is hidden in 'salary'?",
+    "options": [
+     "Sol (sun)",
+     "Sal (salt)",
+     "Silva (forest)",
+     "Solus (alone)"
+    ],
+    "explain": "Salarium comes from sal, the Latin word for salt."
+   },
+   "nl": {
+    "title": "Er zit zout in je salaris",
+    "body": "'Salaris' komt van het Latijnse salarium, dat verwant is aan sal, zout. Zout was kostbaar in de Romeinse tijd, maar waarom de betaling er precies naar is genoemd, is nog steeds onduidelijk.",
+    "question": "Welk Latijns woord zit verstopt in 'salaris'?",
+    "options": [
+     "Sol (zon)",
+     "Sal (zout)",
+     "Silva (bos)",
+     "Solus (alleen)"
+    ],
+    "explain": "Salarium komt van sal, het Latijnse woord voor zout."
+   }
+  },
+  {
+   "id": "language-dutch-boss",
+   "topic": "language",
+   "level": 2,
+   "answer": 0,
+   "source": "Merriam-Webster",
+   "en": {
+    "title": "English words that came from Dutch",
+    "body": "Dutch traders and settlers left many words in English. 'Boss' comes from baas, 'cookie' from koekje, 'yacht' from jacht and 'skate' from schaats.",
+    "question": "Which Dutch word did 'boss' come from?",
+    "options": [
+     "Baas",
+     "Bos",
+     "Buis",
+     "Beus"
+    ],
+    "explain": "Dutch settlers in New York said baas, which English made 'boss'."
+   },
+   "nl": {
+    "title": "Engelse woorden die uit het Nederlands komen",
+    "body": "Nederlandse handelaren en kolonisten lieten veel woorden achter in het Engels. 'Boss' komt van baas, 'cookie' van koekje, 'yacht' van jacht en 'skate' van schaats.",
+    "question": "Van welk Nederlands woord komt 'boss'?",
+    "options": [
+     "Baas",
+     "Bos",
+     "Buis",
+     "Beus"
+    ],
+    "explain": "Nederlandse kolonisten in New York zeiden baas, en het Engels maakte er 'boss' van."
+   }
+  },
+  {
+   "id": "language-knight",
+   "topic": "language",
+   "level": 3,
+   "answer": 0,
+   "source": "Oxford English Dictionary",
+   "en": {
+    "title": "Why 'knight' has a silent k and gh",
+    "body": "In Middle English, about 700 years ago, people really pronounced the k and the gh - a bit like the Dutch word 'knecht'. The pronunciation changed later, but the spelling had already been fixed.",
+    "question": "Was the k in 'knight' once pronounced?",
+    "options": [
+     "Yes",
+     "No",
+     "Only in songs",
+     "Only in Scotland"
+    ],
+    "explain": "Spelling was settled while the k and gh were still spoken; the sounds dropped later."
+   },
+   "nl": {
+    "title": "Waarom 'knight' een stomme k en gh heeft",
+    "body": "In het Middelengels, zo'n 700 jaar geleden, sprak men de k en de gh echt uit - een beetje zoals het Nederlandse 'knecht'. De uitspraak veranderde later, maar de spelling lag toen al vast.",
+    "question": "Werd de k in 'knight' vroeger uitgesproken?",
+    "options": [
+     "Ja",
+     "Nee",
+     "Alleen in liedjes",
+     "Alleen in Schotland"
+    ],
+    "explain": "De spelling lag vast terwijl de k en gh nog werden uitgesproken; die klanken verdwenen later."
+   }
+  },
+  {
+   "id": "language-pangram",
+   "topic": "language",
+   "level": 3,
+   "answer": 1,
+   "source": "Merriam-Webster",
+   "en": {
+    "title": "The sentence that uses every letter",
+    "body": "'The quick brown fox jumps over the lazy dog' contains every letter of the English alphabet. Such a sentence is called a pangram, and typists have used it for over a century to test keyboards and fonts.",
+    "question": "What is a pangram?",
+    "options": [
+     "A word spelled the same backwards",
+     "A sentence that uses every letter",
+     "A word with no vowels",
+     "A very long word"
+    ],
+    "explain": "Pan means 'all' in Greek, gram means 'letter'."
+   },
+   "nl": {
+    "title": "De zin met elke letter",
+    "body": "'The quick brown fox jumps over the lazy dog' bevat elke letter van het alfabet. Zo'n zin heet een pangram. In het Nederlands is 'Pa's wijze lynx bezag vroom het fikse aquaduct' een bekend voorbeeld.",
+    "question": "Wat is een pangram?",
+    "options": [
+     "Een woord dat achterstevoren hetzelfde is",
+     "Een zin met elke letter van het alfabet",
+     "Een woord zonder klinkers",
+     "Een heel lang woord"
+    ],
+    "explain": "Pan betekent 'alles' in het Grieks, gram betekent 'letter'."
+   }
+  },
+  {
+   "id": "history-oxford-aztecs",
+   "topic": "history",
+   "level": 1,
+   "answer": 1,
+   "source": "University of Oxford",
+   "en": {
+    "title": "Oxford University is older than the Aztec capital",
+    "body": "Teaching at Oxford was going on by 1096. The Aztecs founded their capital Tenochtitlan, today's Mexico City, around 1325 - more than 200 years later.",
+    "question": "Around when was Tenochtitlan founded?",
+    "options": [
+     "1096",
+     "1325",
+     "1492",
+     "1600"
+    ],
+    "explain": "Tenochtitlan was founded around 1325, long after teaching began at Oxford."
+   },
+   "nl": {
+    "title": "De Universiteit van Oxford is ouder dan de Azteekse hoofdstad",
+    "body": "In Oxford werd al in 1096 lesgegeven. De Azteken stichtten hun hoofdstad Tenochtitlan, het huidige Mexico-Stad, rond 1325 - meer dan 200 jaar later.",
+    "question": "Rond wanneer werd Tenochtitlan gesticht?",
+    "options": [
+     "1096",
+     "1325",
+     "1492",
+     "1600"
+    ],
+    "explain": "Tenochtitlan werd rond 1325 gesticht, lang nadat in Oxford het onderwijs begon."
+   }
+  },
+  {
+   "id": "history-napoleon-height",
+   "topic": "history",
+   "level": 1,
+   "answer": 2,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Napoleon wasn't actually short",
+    "body": "Napoleon was about 1.69 m tall, average for a Frenchman of his time. The myth partly came from French inches being longer than English ones, and from British cartoons that loved to draw him tiny.",
+    "question": "About how tall was Napoleon?",
+    "options": [
+     "1.50 m",
+     "1.57 m",
+     "1.69 m",
+     "1.85 m"
+    ],
+    "explain": "About 1.69 m - normal for his era."
+   },
+   "nl": {
+    "title": "Napoleon was helemaal niet klein",
+    "body": "Napoleon was ongeveer 1,69 meter lang, gemiddeld voor een Fransman in zijn tijd. De mythe kwam deels doordat Franse duimen langer waren dan Engelse, en door Britse spotprenten die hem graag piepklein tekenden.",
+    "question": "Hoe lang was Napoleon ongeveer?",
+    "options": [
+     "1,50 m",
+     "1,57 m",
+     "1,69 m",
+     "1,85 m"
+    ],
+    "explain": "Ongeveer 1,69 m - normaal voor zijn tijd."
+   }
+  },
+  {
+   "id": "history-viking-horns",
+   "topic": "history",
+   "level": 2,
+   "answer": 2,
+   "source": "National Museum of Denmark",
+   "en": {
+    "title": "Vikings didn't wear horned helmets",
+    "body": "No Viking-age helmet with horns has ever been found. The image mostly comes from the 1800s, when costume designs for Wagner's operas put horns on Norse warriors.",
+    "question": "Where does the horned Viking helmet come from?",
+    "options": [
+     "Viking graves",
+     "Old Norse sagas",
+     "1800s costume design",
+     "Roman writers"
+    ],
+    "explain": "It became popular through 19th-century art and opera costumes."
+   },
+   "nl": {
+    "title": "Vikingen droegen geen helmen met hoorns",
+    "body": "Er is nooit een helm uit de Vikingtijd met hoorns gevonden. Het beeld komt vooral uit de 19e eeuw, toen kostuums voor de opera's van Wagner Noorse krijgers hoorns gaven.",
+    "question": "Waar komt de Vikinghelm met hoorns vandaan?",
+    "options": [
+     "Vikinggraven",
+     "Oude Noorse sagen",
+     "Kostuumontwerp uit de 19e eeuw",
+     "Romeinse schrijvers"
+    ],
+    "explain": "Het werd populair door kunst en operakostuums uit de 19e eeuw."
+   }
+  },
+  {
+   "id": "history-shortest-war",
+   "topic": "history",
+   "level": 2,
+   "answer": 0,
+   "source": "Guinness World Records",
+   "en": {
+    "title": "The shortest war in history",
+    "body": "On 27 August 1896 Britain and Zanzibar went to war. The British shelled the sultan's palace and the fighting was over in about 38 to 45 minutes.",
+    "question": "About how long did the Anglo-Zanzibar War last?",
+    "options": [
+     "Under an hour",
+     "One day",
+     "One week",
+     "One month"
+    ],
+    "explain": "It lasted roughly 38 to 45 minutes."
+   },
+   "nl": {
+    "title": "De kortste oorlog uit de geschiedenis",
+    "body": "Op 27 augustus 1896 raakten Groot-Brittannië en Zanzibar in oorlog. De Britten beschoten het paleis van de sultan en na zo'n 38 tot 45 minuten was het voorbij.",
+    "question": "Hoe lang duurde de oorlog tussen Engeland en Zanzibar ongeveer?",
+    "options": [
+     "Minder dan een uur",
+     "Eén dag",
+     "Eén week",
+     "Eén maand"
+    ],
+    "explain": "Hij duurde ongeveer 38 tot 45 minuten."
+   }
+  },
+  {
+   "id": "history-gutenberg",
+   "topic": "history",
+   "level": 3,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "How printing changed Europe",
+    "body": "Around 1450 Johannes Gutenberg in Mainz developed printing with movable metal type. Pages could now be set from reusable letters, and within 50 years millions of books had been printed across Europe.",
+    "question": "What did Gutenberg introduce to Europe?",
+    "options": [
+     "Paper",
+     "Printing with movable metal type",
+     "The first library",
+     "Ink"
+    ],
+    "explain": "Reusable metal letters made printing fast and cheap."
+   },
+   "nl": {
+    "title": "Hoe de boekdrukkunst Europa veranderde",
+    "body": "Rond 1450 ontwikkelde Johannes Gutenberg in Mainz het drukken met losse metalen letters. Pagina's konden nu worden gezet met herbruikbare letters, en binnen 50 jaar waren er in Europa miljoenen boeken gedrukt.",
+    "question": "Wat bracht Gutenberg naar Europa?",
+    "options": [
+     "Papier",
+     "Drukken met losse metalen letters",
+     "De eerste bibliotheek",
+     "Inkt"
+    ],
+    "explain": "Herbruikbare metalen letters maakten drukken snel en goedkoop."
+   }
+  },
+  {
+   "id": "history-berlin-wall",
+   "topic": "history",
+   "level": 3,
+   "answer": 1,
+   "source": "Bundesstiftung Aufarbeitung",
+   "en": {
+    "title": "The Berlin Wall opened by mistake",
+    "body": "On 9 November 1989 East German official Günter Schabowski announced new travel rules at a press conference. Asked when they started, he said 'immediately' - he hadn't been told the actual date. Crowds rushed to the border that night and the guards opened the gates.",
+    "question": "In which year did the Berlin Wall open?",
+    "options": [
+     "1961",
+     "1989",
+     "1991",
+     "1975"
+    ],
+    "explain": "The wall opened on the night of 9 November 1989."
+   },
+   "nl": {
+    "title": "De Berlijnse Muur ging per ongeluk open",
+    "body": "Op 9 november 1989 kondigde de Oost-Duitse politicus Günter Schabowski op een persconferentie nieuwe reisregels aan. Op de vraag wanneer die ingingen, zei hij 'onmiddellijk' - hij wist de echte datum niet. Die nacht stroomden mensen naar de grens en gingen de poorten open.",
+    "question": "In welk jaar ging de Berlijnse Muur open?",
+    "options": [
+     "1961",
+     "1989",
+     "1991",
+     "1975"
+    ],
+    "explain": "De muur ging open in de nacht van 9 november 1989."
+   }
+  },
+  {
+   "id": "geography-australia-moon",
+   "topic": "geography",
+   "level": 1,
+   "answer": 1,
+   "source": "NASA / Geoscience Australia",
+   "en": {
+    "title": "Australia is wider than the Moon",
+    "body": "The Moon is about 3,474 km across. Mainland Australia stretches about 4,000 km from east to west - so it's wider than the Moon.",
+    "question": "About how wide is the Moon?",
+    "options": [
+     "800 km",
+     "3,474 km",
+     "12,700 km",
+     "40,000 km"
+    ],
+    "explain": "The Moon is about 3,474 km across, less than Australia's width."
+   },
+   "nl": {
+    "title": "Australië is breder dan de maan",
+    "body": "De maan is ongeveer 3.474 km breed. Het vasteland van Australië is van oost naar west zo'n 4.000 km - dus breder dan de maan.",
+    "question": "Hoe breed is de maan ongeveer?",
+    "options": [
+     "800 km",
+     "3.474 km",
+     "12.700 km",
+     "40.000 km"
+    ],
+    "explain": "De maan is ongeveer 3.474 km breed, minder dan de breedte van Australië."
+   }
+  },
+  {
+   "id": "geography-nl-below-sea",
+   "topic": "geography",
+   "level": 1,
+   "answer": 1,
+   "source": "PBL Netherlands Environmental Assessment Agency",
+   "en": {
+    "title": "A quarter of the Netherlands is below sea level",
+    "body": "About 26% of the Netherlands lies below sea level, and roughly 60% would flood without dunes, dikes and pumps. The lowest point, near Rotterdam, is almost 7 metres below sea level.",
+    "question": "About how much of the Netherlands lies below sea level?",
+    "options": [
+     "5%",
+     "26%",
+     "50%",
+     "75%"
+    ],
+    "explain": "About a quarter of the country is below sea level."
+   },
+   "nl": {
+    "title": "Een kwart van Nederland ligt onder zeeniveau",
+    "body": "Ongeveer 26% van Nederland ligt onder zeeniveau, en zo'n 60% zou overstromen zonder duinen, dijken en gemalen. Het laagste punt, bij Rotterdam, ligt bijna 7 meter onder zeeniveau.",
+    "question": "Hoeveel van Nederland ligt ongeveer onder zeeniveau?",
+    "options": [
+     "5%",
+     "26%",
+     "50%",
+     "75%"
+    ],
+    "explain": "Ongeveer een kwart van het land ligt onder zeeniveau."
+   }
+  },
+  {
+   "id": "geography-mercator",
+   "topic": "geography",
+   "level": 2,
+   "answer": 0,
+   "source": "National Geographic",
+   "en": {
+    "title": "Africa is much bigger than most maps show",
+    "body": "Most world maps use the Mercator projection, which stretches land near the poles. Greenland looks as big as Africa, but Africa is about 14 times larger - big enough to hold the USA, China and India together.",
+    "question": "Why does Greenland look as big as Africa on many maps?",
+    "options": [
+     "The Mercator projection stretches the poles",
+     "Greenland is growing",
+     "Africa is shrinking",
+     "Maps are drawn by hand"
+    ],
+    "explain": "Mercator enlarges areas far from the equator."
+   },
+   "nl": {
+    "title": "Afrika is veel groter dan de meeste kaarten laten zien",
+    "body": "De meeste wereldkaarten gebruiken de mercatorprojectie, die land bij de polen uitrekt. Groenland lijkt even groot als Afrika, maar Afrika is ongeveer 14 keer zo groot - groot genoeg voor de VS, China en India samen.",
+    "question": "Waarom lijkt Groenland op veel kaarten even groot als Afrika?",
+    "options": [
+     "De mercatorprojectie rekt de polen uit",
+     "Groenland groeit",
+     "Afrika krimpt",
+     "Kaarten worden met de hand getekend"
+    ],
+    "explain": "Mercator vergroot gebieden ver van de evenaar."
+   }
+  },
+  {
+   "id": "geography-baikal",
+   "topic": "geography",
+   "level": 2,
+   "answer": 0,
+   "source": "UNESCO World Heritage Centre",
+   "en": {
+    "title": "The deepest lake on Earth",
+    "body": "Lake Baikal in Siberia is about 1,642 metres deep. It holds roughly a fifth of all the unfrozen fresh water on Earth's surface - more than all of North America's Great Lakes together.",
+    "question": "Which is the deepest lake in the world?",
+    "options": [
+     "Lake Baikal",
+     "Lake Superior",
+     "Lake Victoria",
+     "Lake Titicaca"
+    ],
+    "explain": "Lake Baikal reaches about 1,642 metres."
+   },
+   "nl": {
+    "title": "Het diepste meer op aarde",
+    "body": "Het Baikalmeer in Siberië is ongeveer 1.642 meter diep. Het bevat zo'n vijfde van al het niet-bevroren zoete water aan het aardoppervlak - meer dan alle Grote Meren van Noord-Amerika samen.",
+    "question": "Welk meer is het diepste ter wereld?",
+    "options": [
+     "Het Baikalmeer",
+     "Het Bovenmeer",
+     "Het Victoriameer",
+     "Het Titicacameer"
+    ],
+    "explain": "Het Baikalmeer is ongeveer 1.642 meter diep."
+   }
+  },
+  {
+   "id": "geography-point-nemo",
+   "topic": "geography",
+   "level": 3,
+   "answer": 2,
+   "source": "NOAA Ocean Service",
+   "en": {
+    "title": "The loneliest spot in the ocean",
+    "body": "Point Nemo in the South Pacific is the place farthest from any land - about 2,688 km from the nearest coast. It's so remote that space agencies steer old satellites and space stations to crash there.",
+    "question": "What is the area around Point Nemo used for?",
+    "options": [
+     "A shipping hub",
+     "A fishing ground",
+     "A graveyard for spacecraft",
+     "A weather station"
+    ],
+    "explain": "Its remoteness makes it the safest place to drop old spacecraft."
+   },
+   "nl": {
+    "title": "De eenzaamste plek in de oceaan",
+    "body": "Point Nemo in de zuidelijke Grote Oceaan is de plek die het verst van land ligt - zo'n 2.688 km van de dichtstbijzijnde kust. Het is zo afgelegen dat ruimtevaartorganisaties oude satellieten en ruimtestations er laten neerstorten.",
+    "question": "Waarvoor wordt het gebied rond Point Nemo gebruikt?",
+    "options": [
+     "Als scheepvaartknooppunt",
+     "Als visgrond",
+     "Als kerkhof voor ruimtevaartuigen",
+     "Als weerstation"
+    ],
+    "explain": "Omdat het zo afgelegen is, is het de veiligste plek voor oude ruimtevaartuigen."
+   }
+  },
+  {
+   "id": "geography-chimborazo",
+   "topic": "geography",
+   "level": 3,
+   "answer": 1,
+   "source": "NOAA / National Geographic",
+   "en": {
+    "title": "Everest isn't the summit closest to space",
+    "body": "Earth bulges at the equator. Chimborazo in Ecuador sits almost on the equator, so its peak is about 2 km farther from Earth's centre than Everest's - even though Everest is higher above sea level.",
+    "question": "Which mountain peak is farthest from Earth's centre?",
+    "options": [
+     "Everest",
+     "Chimborazo",
+     "Kilimanjaro",
+     "Mont Blanc"
+    ],
+    "explain": "The equatorial bulge lifts Chimborazo farther from the centre than Everest."
+   },
+   "nl": {
+    "title": "Everest is niet de top die het dichtst bij de ruimte ligt",
+    "body": "De aarde is bij de evenaar wat dikker. De Chimborazo in Ecuador ligt bijna op de evenaar, dus is zijn top zo'n 2 km verder van het middelpunt van de aarde dan die van Everest - ook al is Everest hoger boven zeeniveau.",
+    "question": "Welke bergtop ligt het verst van het middelpunt van de aarde?",
+    "options": [
+     "Everest",
+     "Chimborazo",
+     "Kilimanjaro",
+     "Mont Blanc"
+    ],
+    "explain": "Door de dikte bij de evenaar ligt de Chimborazo verder van het middelpunt dan Everest."
+   }
+  },
+  {
+   "id": "psychology-contagious-yawn",
+   "topic": "psychology",
+   "level": 1,
+   "answer": 2,
+   "source": "Scientific American",
+   "en": {
+    "title": "Yawns are contagious - even in writing",
+    "body": "Seeing someone yawn, hearing it, or even reading about yawning can make you yawn too. Scientists still debate exactly why, but it seems linked to how we tune in to people around us.",
+    "question": "Which of these can trigger a yawn?",
+    "options": [
+     "Drinking water",
+     "Bright light only",
+     "Reading about yawning",
+     "Counting numbers"
+    ],
+    "explain": "Just thinking or reading about yawns is often enough. Did you yawn?"
+   },
+   "nl": {
+    "title": "Gapen is besmettelijk - zelfs op papier",
+    "body": "Iemand zien gapen, het horen of zelfs erover lezen kan jou ook laten gapen. Wetenschappers twisten nog over het precieze waarom, maar het lijkt te maken te hebben met hoe we op mensen om ons heen afstemmen.",
+    "question": "Waardoor kun je gaan gapen?",
+    "options": [
+     "Water drinken",
+     "Alleen fel licht",
+     "Lezen over gapen",
+     "Getallen tellen"
+    ],
+    "explain": "Alleen al denken of lezen over gapen is vaak genoeg. Moest je gapen?"
+   }
+  },
+  {
+   "id": "psychology-serial-position",
+   "topic": "psychology",
+   "level": 1,
+   "answer": 1,
+   "source": "American Psychological Association",
+   "en": {
+    "title": "Why you forget the middle of a list",
+    "body": "When you try to remember a list, you usually recall the first items (the primacy effect) and the last items (the recency effect) best. The ones in the middle are the easiest to forget.",
+    "question": "Which items from a list are hardest to remember?",
+    "options": [
+     "The first ones",
+     "The middle ones",
+     "The last ones",
+     "The longest ones"
+    ],
+    "explain": "Beginning and end stick best; the middle gets lost."
+   },
+   "nl": {
+    "title": "Waarom je het midden van een lijstje vergeet",
+    "body": "Als je een lijst probeert te onthouden, weet je meestal de eerste dingen (het primacy-effect) en de laatste dingen (het recency-effect) het best. De middelste vergeet je het makkelijkst.",
+    "question": "Welke dingen uit een lijst onthoud je het slechtst?",
+    "options": [
+     "De eerste",
+     "De middelste",
+     "De laatste",
+     "De langste"
+    ],
+    "explain": "Begin en eind blijven het best hangen; het midden raakt zoek."
+   }
+  },
+  {
+   "id": "psychology-spotlight",
+   "topic": "psychology",
+   "level": 2,
+   "answer": 1,
+   "source": "Gilovich, Medvec & Savitsky (2000)",
+   "en": {
+    "title": "Fewer people notice you than you think",
+    "body": "In a famous study, students wore an embarrassing T-shirt into a room. They guessed about half the people noticed it; in reality only about a quarter did. We overestimate how much others pay attention to us - the spotlight effect.",
+    "question": "What is the spotlight effect?",
+    "options": [
+     "Liking to be the centre of attention",
+     "Thinking others notice you more than they do",
+     "Being blinded by stage lights",
+     "Remembering bright colours better"
+    ],
+    "explain": "We feel watched far more than we actually are."
+   },
+   "nl": {
+    "title": "Minder mensen letten op je dan je denkt",
+    "body": "In een bekend onderzoek liepen studenten een zaal in met een gênant T-shirt aan. Ze dachten dat de helft het zag; in werkelijkheid was dat maar ongeveer een kwart. We overschatten hoeveel anderen op ons letten - het spotlighteffect.",
+    "question": "Wat is het spotlighteffect?",
+    "options": [
+     "Graag in het middelpunt staan",
+     "Denken dat anderen je meer opmerken dan ze doen",
+     "Verblind worden door podiumlicht",
+     "Felle kleuren beter onthouden"
+    ],
+    "explain": "We voelen ons veel meer bekeken dan we echt worden."
+   }
+  },
+  {
+   "id": "psychology-cocktail-party",
+   "topic": "psychology",
+   "level": 2,
+   "answer": 0,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "Why you hear your name in a noisy room",
+    "body": "At a busy party you can focus on one conversation and tune the rest out. Yet if someone across the room says your name, you'll often notice it. Your brain keeps quietly checking the background for things that matter to you.",
+    "question": "What is this ability called?",
+    "options": [
+     "The cocktail party effect",
+     "The echo effect",
+     "The doorway effect",
+     "The halo effect"
+    ],
+    "explain": "It's called the cocktail party effect."
+   },
+   "nl": {
+    "title": "Waarom je je naam hoort in een druk lokaal",
+    "body": "Op een druk feestje kun je je op één gesprek richten en de rest wegfilteren. Toch merk je het vaak op als iemand verderop je naam noemt. Je brein blijft op de achtergrond stil checken op dingen die voor jou belangrijk zijn.",
+    "question": "Hoe heet dit vermogen?",
+    "options": [
+     "Het cocktailparty-effect",
+     "Het echo-effect",
+     "Het deuropening-effect",
+     "Het halo-effect"
+    ],
+    "explain": "Dit heet het cocktailparty-effect."
+   }
+  },
+  {
+   "id": "psychology-dunning-kruger",
+   "topic": "psychology",
+   "level": 3,
+   "answer": 1,
+   "source": "Kruger & Dunning (1999)",
+   "en": {
+    "title": "Why beginners can feel like experts",
+    "body": "In 1999 psychologists Kruger and Dunning found that people with little skill in a task often rated themselves well above average. Part of the reason: the knowledge you need to do something well is also what you need to spot your own mistakes.",
+    "question": "What does the Dunning-Kruger effect describe?",
+    "options": [
+     "Experts always underestimate the task",
+     "People with low skill tend to overestimate it",
+     "Everyone rates themselves average",
+     "Practice makes people less confident"
+    ],
+    "explain": "Low skill and overconfidence often go together."
+   },
+   "nl": {
+    "title": "Waarom beginners zich expert kunnen voelen",
+    "body": "In 1999 ontdekten psychologen Kruger en Dunning dat mensen met weinig vaardigheid zichzelf vaak ver boven gemiddeld inschatten. Een deel van de reden: de kennis die je nodig hebt om iets goed te doen, heb je ook nodig om je eigen fouten te zien.",
+    "question": "Wat beschrijft het Dunning-Krugereffect?",
+    "options": [
+     "Experts onderschatten de taak altijd",
+     "Mensen met weinig vaardigheid overschatten zichzelf vaak",
+     "Iedereen schat zichzelf gemiddeld in",
+     "Oefenen maakt mensen onzekerder"
+    ],
+    "explain": "Weinig vaardigheid en overmoed gaan vaak samen."
+   }
+  },
+  {
+   "id": "psychology-ikea-effect",
+   "topic": "psychology",
+   "level": 3,
+   "answer": 2,
+   "source": "Norton, Mochon & Ariely (2012)",
+   "en": {
+    "title": "Why you love the cupboard you built yourself",
+    "body": "Researchers found that people value things they built themselves more highly than the same thing ready-made - even when their version is a bit wobbly. They named it after the flat-pack furniture store.",
+    "question": "What is this effect called?",
+    "options": [
+     "The DIY bias",
+     "The builder effect",
+     "The IKEA effect",
+     "The handmade rule"
+    ],
+    "explain": "Effort makes us love the result - the IKEA effect."
+   },
+   "nl": {
+    "title": "Waarom je dol bent op het kastje dat je zelf in elkaar zette",
+    "body": "Onderzoekers ontdekten dat mensen dingen die ze zelf in elkaar zetten meer waard vinden dan hetzelfde ding kant-en-klaar - zelfs als hun versie een beetje wiebelt. Ze noemden het naar de bekende meubelwinkel.",
+    "question": "Hoe heet dit effect?",
+    "options": [
+     "De doe-het-zelf-bias",
+     "Het bouwerseffect",
+     "Het IKEA-effect",
+     "De handgemaakt-regel"
+    ],
+    "explain": "Moeite laat ons meer van het resultaat houden - het IKEA-effect."
+   }
+  },
+  {
+   "id": "money-99-prices",
+   "topic": "money",
+   "level": 1,
+   "answer": 1,
+   "source": "Journal of Consumer Research",
+   "en": {
+    "title": "Why prices end in .99",
+    "body": "Shops price things at €9.99 instead of €10 because we read the first digit first. Our brain files €9.99 as 'about 9' rather than 'about 10' - the left-digit effect.",
+    "question": "What is this pricing trick called?",
+    "options": [
+     "The round number rule",
+     "The left-digit effect",
+     "The decoy effect",
+     "The sale effect"
+    ],
+    "explain": "We anchor on the first digit, so 9.99 feels much cheaper than 10."
+   },
+   "nl": {
+    "title": "Waarom prijzen op ,99 eindigen",
+    "body": "Winkels zetten iets op €9,99 in plaats van €10 omdat we het eerste cijfer het eerst lezen. Ons brein ziet €9,99 als 'ongeveer 9' in plaats van 'ongeveer 10' - het linkercijfereffect.",
+    "question": "Hoe heet deze prijstruc?",
+    "options": [
+     "De rond-getalregel",
+     "Het linkercijfereffect",
+     "Het lokkertje-effect",
+     "Het uitverkoopeffect"
+    ],
+    "explain": "We kijken vooral naar het eerste cijfer, dus 9,99 voelt veel goedkoper dan 10."
+   }
+  },
+  {
+   "id": "money-first-coins",
+   "topic": "money",
+   "level": 1,
+   "answer": 0,
+   "source": "British Museum",
+   "en": {
+    "title": "The first coins came from Lydia",
+    "body": "The oldest known coins were made around 600 BC in Lydia, in what is now Turkey. They were made of electrum, a natural mix of gold and silver, and stamped so people could trust their value.",
+    "question": "Where were the first known coins made?",
+    "options": [
+     "Lydia, in modern Turkey",
+     "Ancient Egypt",
+     "China",
+     "Rome"
+    ],
+    "explain": "Lydia minted electrum coins around 600 BC."
+   },
+   "nl": {
+    "title": "De eerste munten kwamen uit Lydië",
+    "body": "De oudst bekende munten werden rond 600 v.Chr. gemaakt in Lydië, in het huidige Turkije. Ze waren van elektrum, een natuurlijk mengsel van goud en zilver, en kregen een stempel zodat mensen hun waarde konden vertrouwen.",
+    "question": "Waar werden de eerste bekende munten gemaakt?",
+    "options": [
+     "Lydië, in het huidige Turkije",
+     "Het oude Egypte",
+     "China",
+     "Rome"
+    ],
+    "explain": "Lydië sloeg rond 600 v.Chr. munten van elektrum."
+   }
+  },
+  {
+   "id": "money-inflation-halving",
+   "topic": "money",
+   "level": 2,
+   "answer": 2,
+   "source": "European Central Bank",
+   "en": {
+    "title": "How inflation quietly halves your money",
+    "body": "At 2% inflation a year - the European Central Bank's target - prices double in about 36 years. That means cash under your mattress buys only half as much after that time.",
+    "question": "At 2% inflation, roughly when does money lose half its buying power?",
+    "options": [
+     "After 10 years",
+     "After 20 years",
+     "After 36 years",
+     "After 72 years"
+    ],
+    "explain": "Use the rule of 72: 72 divided by 2 is 36 years."
+   },
+   "nl": {
+    "title": "Hoe inflatie je geld stilletjes halveert",
+    "body": "Bij 2% inflatie per jaar - het doel van de Europese Centrale Bank - verdubbelen prijzen in ongeveer 36 jaar. Geld onder je matras is na die tijd dus nog maar de helft waard.",
+    "question": "Na hoeveel jaar is geld bij 2% inflatie ongeveer de helft waard?",
+    "options": [
+     "Na 10 jaar",
+     "Na 20 jaar",
+     "Na 36 jaar",
+     "Na 72 jaar"
+    ],
+    "explain": "Gebruik de regel van 72: 72 gedeeld door 2 is 36 jaar."
+   }
+  },
+  {
+   "id": "money-tulip-mania",
+   "topic": "money",
+   "level": 2,
+   "answer": 1,
+   "source": "Encyclopaedia Britannica",
+   "en": {
+    "title": "When tulips cost as much as a house",
+    "body": "In the Dutch Republic in the 1630s, prices for rare tulip bulbs shot up. At the peak in early 1637, a single bulb could sell for more than a craftsman earned in years. Then prices suddenly crashed.",
+    "question": "In which country did 'tulip mania' happen?",
+    "options": [
+     "France",
+     "The Dutch Republic",
+     "England",
+     "Turkey"
+    ],
+    "explain": "It peaked in the Dutch Republic in early 1637."
+   },
+   "nl": {
+    "title": "Toen een tulp evenveel kostte als een huis",
+    "body": "In de Republiek der Nederlanden schoten in de jaren 1630 de prijzen van zeldzame tulpenbollen omhoog. Op het hoogtepunt, begin 1637, kon één bol meer opbrengen dan een vakman in jaren verdiende. Daarna stortten de prijzen ineens in.",
+    "question": "In welk land speelde de 'tulpenmanie'?",
+    "options": [
+     "Frankrijk",
+     "De Republiek der Nederlanden",
+     "Engeland",
+     "Turkije"
+    ],
+    "explain": "Het hoogtepunt was begin 1637 in de Republiek."
+   }
+  },
+  {
+   "id": "money-opportunity-cost",
+   "topic": "money",
+   "level": 3,
+   "answer": 0,
+   "source": "Investopedia",
+   "en": {
+    "title": "Everything costs more than its price",
+    "body": "Opportunity cost is the value of the best thing you give up when you choose something. An evening of TV costs no money, but it might cost the evening you'd have spent learning or seeing friends.",
+    "question": "What is opportunity cost?",
+    "options": [
+     "The value of the best option you give up",
+     "The price on the label",
+     "Tax on a purchase",
+     "The cost of borrowing money"
+    ],
+    "explain": "It's what you miss out on by choosing something else."
+   },
+   "nl": {
+    "title": "Alles kost meer dan zijn prijs",
+    "body": "Opportuniteitskosten zijn de waarde van de beste optie die je laat liggen als je iets kiest. Een avond tv kost geen geld, maar misschien wel de avond die je anders had besteed aan leren of vrienden zien.",
+    "question": "Wat zijn opportuniteitskosten?",
+    "options": [
+     "De waarde van de beste optie die je opgeeft",
+     "De prijs op het etiket",
+     "Belasting op een aankoop",
+     "De kosten van geld lenen"
+    ],
+    "explain": "Het is wat je misloopt doordat je iets anders kiest."
+   }
+  },
+  {
+   "id": "money-banks-create",
+   "topic": "money",
+   "level": 3,
+   "answer": 1,
+   "source": "Bank of England Quarterly Bulletin (2014)",
+   "en": {
+    "title": "Banks create money when they lend",
+    "body": "You might think banks lend out other people's savings. In fact, when a bank gives a loan it mostly creates a brand-new deposit in the borrower's account. The Bank of England explained this in a well-known 2014 article.",
+    "question": "When a bank gives a loan, where does most of the money come from?",
+    "options": [
+     "Gold in the vault",
+     "It's newly created as a deposit",
+     "Other customers' savings only",
+     "The government prints it that day"
+    ],
+    "explain": "Lending creates a new deposit - most money today exists this way."
+   },
+   "nl": {
+    "title": "Banken maken geld als ze lenen",
+    "body": "Je zou denken dat banken het spaargeld van anderen uitlenen. Maar als een bank een lening geeft, maakt ze vooral een gloednieuw tegoed op de rekening van de lener. De Bank of England legde dit uit in een bekend artikel uit 2014.",
+    "question": "Waar komt het meeste geld vandaan als een bank een lening geeft?",
+    "options": [
+     "Goud in de kluis",
+     "Het wordt nieuw gemaakt als tegoed",
+     "Alleen spaargeld van andere klanten",
+     "De overheid drukt het die dag"
+    ],
+    "explain": "Lenen maakt een nieuw tegoed - het meeste geld bestaat zo."
+   }
+  },
+  {
+   "id": "tech-qwerty",
+   "topic": "tech",
+   "level": 1,
+   "answer": 1,
+   "source": "Smithsonian Magazine",
+   "en": {
+    "title": "QWERTY was made for typewriters",
+    "body": "The QWERTY layout comes from Christopher Latham Sholes' typewriters of the 1870s. Computers no longer need it, but people were so used to it that it stayed.",
+    "question": "Where was the QWERTY layout first used?",
+    "options": [
+     "Early computers",
+     "Typewriters",
+     "Telephones",
+     "Pianos"
+    ],
+    "explain": "It started on 1870s typewriters and never went away."
+   },
+   "nl": {
+    "title": "QWERTY is gemaakt voor typemachines",
+    "body": "De QWERTY-indeling komt van de typemachines van Christopher Latham Sholes uit de jaren 1870. Computers hebben die indeling niet nodig, maar iedereen was er zo aan gewend dat hij bleef.",
+    "question": "Waar werd de QWERTY-indeling voor het eerst gebruikt?",
+    "options": [
+     "Vroege computers",
+     "Typemachines",
+     "Telefoons",
+     "Piano's"
+    ],
+    "explain": "Het begon op typemachines uit de jaren 1870 en bleef daarna bestaan."
+   }
+  },
+  {
+   "id": "tech-wifi-name",
+   "topic": "tech",
+   "level": 1,
+   "answer": 2,
+   "source": "Wi-Fi Alliance",
+   "en": {
+    "title": "Wi-Fi doesn't stand for anything",
+    "body": "In 1999 a branding agency came up with 'Wi-Fi' as a catchy name, a play on 'hi-fi'. It was never short for 'wireless fidelity' - that phrase was only added later as a slogan.",
+    "question": "What does Wi-Fi stand for?",
+    "options": [
+     "Wireless fidelity",
+     "Wide frequency",
+     "Nothing - it's a brand name",
+     "Wire-free internet"
+    ],
+    "explain": "It's a made-up brand name from 1999."
+   },
+   "nl": {
+    "title": "Wi-Fi is nergens een afkorting van",
+    "body": "In 1999 bedacht een reclamebureau 'Wi-Fi' als pakkende naam, een knipoog naar 'hi-fi'. Het stond nooit voor 'wireless fidelity' - die woorden werden pas later als slogan toegevoegd.",
+    "question": "Waar staat Wi-Fi voor?",
+    "options": [
+     "Wireless fidelity",
+     "Wide frequency",
+     "Nergens voor - het is een merknaam",
+     "Wire-free internet"
+    ],
+    "explain": "Het is een verzonnen merknaam uit 1999."
+   }
+  },
+  {
+   "id": "tech-coffee-webcam",
+   "topic": "tech",
+   "level": 2,
+   "answer": 0,
+   "source": "University of Cambridge",
+   "en": {
+    "title": "The first webcam watched a coffee pot",
+    "body": "In 1991 researchers at Cambridge University pointed a camera at the coffee pot in their 'Trojan Room', so they could see from their desks whether it was empty. In 1993 it went on the web and became world famous.",
+    "question": "What did the first famous webcam show?",
+    "options": [
+     "A coffee pot",
+     "A fish tank",
+     "A street",
+     "A cat"
+    ],
+    "explain": "It watched the Trojan Room coffee pot at Cambridge."
+   },
+   "nl": {
+    "title": "De eerste webcam keek naar een koffiepot",
+    "body": "In 1991 richtten onderzoekers van de Universiteit van Cambridge een camera op de koffiepot in hun 'Trojan Room', zodat ze vanaf hun bureau konden zien of hij leeg was. In 1993 kwam hij op het web en werd hij wereldberoemd.",
+    "question": "Wat liet de eerste beroemde webcam zien?",
+    "options": [
+     "Een koffiepot",
+     "Een aquarium",
+     "Een straat",
+     "Een kat"
+    ],
+    "explain": "Hij keek naar de koffiepot in de Trojan Room in Cambridge."
+   }
+  },
+  {
+   "id": "tech-apollo-computer",
+   "topic": "tech",
+   "level": 2,
+   "answer": 1,
+   "source": "NASA History Office",
+   "en": {
+    "title": "Your phone beats the Apollo computer by far",
+    "body": "The computer that guided Apollo 11 to the Moon in 1969 had about 4 kilobytes of working memory. A typical smartphone today has millions of times more.",
+    "question": "About how much working memory did the Apollo Guidance Computer have?",
+    "options": [
+     "4 bytes",
+     "4 kilobytes",
+     "4 megabytes",
+     "4 gigabytes"
+    ],
+    "explain": "Just about 4 KB of RAM - less than one short email."
+   },
+   "nl": {
+    "title": "Je telefoon is veel sterker dan de Apollo-computer",
+    "body": "De computer die Apollo 11 in 1969 naar de maan stuurde, had ongeveer 4 kilobyte werkgeheugen. Een gewone smartphone heeft er nu miljoenen keren meer.",
+    "question": "Hoeveel werkgeheugen had de Apollo-computer ongeveer?",
+    "options": [
+     "4 bytes",
+     "4 kilobyte",
+     "4 megabyte",
+     "4 gigabyte"
+    ],
+    "explain": "Maar ongeveer 4 KB - minder dan één kort mailtje."
+   }
+  },
+  {
+   "id": "tech-spam-name",
+   "topic": "tech",
+   "level": 3,
+   "answer": 2,
+   "source": "Merriam-Webster",
+   "en": {
+    "title": "Why junk mail is called spam",
+    "body": "The name comes from a 1970 Monty Python sketch in which a group of Vikings keeps singing 'Spam' over and over, drowning out everything else. Early internet users used it for messages that flood a channel.",
+    "question": "Where does the word 'spam' for junk messages come from?",
+    "options": [
+     "A computer error code",
+     "An abbreviation for 'sent people a message'",
+     "A Monty Python sketch",
+     "A programmer's surname"
+    ],
+    "explain": "The Monty Python sketch with endlessly repeated 'Spam' gave junk mail its name."
+   },
+   "nl": {
+    "title": "Waarom ongewenste mail spam heet",
+    "body": "De naam komt uit een Monty Python-sketch uit 1970 waarin een groep Vikingen steeds maar 'Spam' zingt en alles overstemt. Vroege internetgebruikers gebruikten het voor berichten die een kanaal overspoelen.",
+    "question": "Waar komt het woord 'spam' voor ongewenste berichten vandaan?",
+    "options": [
+     "Een foutcode van een computer",
+     "Een afkorting van 'sent people a message'",
+     "Een Monty Python-sketch",
+     "De achternaam van een programmeur"
+    ],
+    "explain": "De Monty Python-sketch met eindeloos herhaalde 'Spam' gaf ongewenste mail zijn naam."
+   }
+  },
+  {
+   "id": "tech-moores-law",
+   "topic": "tech",
+   "level": 3,
+   "answer": 1,
+   "source": "Intel / Encyclopaedia Britannica",
+   "en": {
+    "title": "Moore's law",
+    "body": "In 1965 Intel co-founder Gordon Moore noticed that the number of transistors on a chip doubled every year. In 1975 he revised it to about every two years, and that pace held for decades.",
+    "question": "Roughly how often did transistor counts double, by Moore's revised law?",
+    "options": [
+     "Every month",
+     "Every two years",
+     "Every ten years",
+     "Every fifty years"
+    ],
+    "explain": "About every two years, according to his 1975 update."
+   },
+   "nl": {
+    "title": "De wet van Moore",
+    "body": "In 1965 zag Intel-medeoprichter Gordon Moore dat het aantal transistors op een chip elk jaar verdubbelde. In 1975 stelde hij dat bij naar ongeveer elke twee jaar, en dat tempo hield tientallen jaren stand.",
+    "question": "Hoe vaak verdubbelde het aantal transistors ongeveer volgens Moore's bijgestelde wet?",
+    "options": [
+     "Elke maand",
+     "Elke twee jaar",
+     "Elke tien jaar",
+     "Elke vijftig jaar"
+    ],
+    "explain": "Ongeveer elke twee jaar, volgens zijn update uit 1975."
+   }
+  },
+  {
+   "id": "body-bones-baby",
+   "topic": "body",
+   "level": 1,
+   "answer": 2,
+   "source": "Cleveland Clinic",
+   "en": {
+    "title": "Babies have more bones than adults",
+    "body": "A newborn has around 270 to 300 bones. As you grow, many of them fuse together - in the skull and lower spine, for example - leaving an adult with 206.",
+    "question": "How many bones does an adult usually have?",
+    "options": [
+     "150",
+     "180",
+     "206",
+     "300"
+    ],
+    "explain": "Adults usually have 206 bones after many fuse together."
+   },
+   "nl": {
+    "title": "Baby's hebben meer botten dan volwassenen",
+    "body": "Een pasgeboren baby heeft zo'n 270 tot 300 botten. Tijdens het groeien groeien veel ervan aan elkaar - bijvoorbeeld in de schedel en onderrug - en houdt een volwassene er 206 over.",
+    "question": "Hoeveel botten heeft een volwassene meestal?",
+    "options": [
+     "150",
+     "180",
+     "206",
+     "300"
+    ],
+    "explain": "Volwassenen hebben meestal 206 botten, nadat er veel zijn vergroeid."
+   }
+  },
+  {
+   "id": "body-swallow-breathe",
+   "topic": "body",
+   "level": 1,
+   "answer": 1,
+   "source": "Cleveland Clinic",
+   "en": {
+    "title": "You can't breathe and swallow at the same time",
+    "body": "When you swallow, a small flap called the epiglottis folds down over your windpipe, so food goes into your food pipe instead. For that moment, breathing pauses.",
+    "question": "Which flap covers your windpipe when you swallow?",
+    "options": [
+     "The tonsil",
+     "The epiglottis",
+     "The uvula",
+     "The eardrum"
+    ],
+    "explain": "The epiglottis closes off your windpipe while you swallow."
+   },
+   "nl": {
+    "title": "Je kunt niet tegelijk ademen en slikken",
+    "body": "Als je slikt, klapt een klepje, het strottenklepje, over je luchtpijp, zodat eten in je slokdarm gaat. Op dat moment stopt je ademhaling heel even.",
+    "question": "Welk klepje sluit je luchtpijp af als je slikt?",
+    "options": [
+     "De amandel",
+     "Het strottenklepje",
+     "De huig",
+     "Het trommelvlies"
+    ],
+    "explain": "Het strottenklepje sluit je luchtpijp af terwijl je slikt."
+   }
+  },
+  {
+   "id": "body-goosebumps",
+   "topic": "body",
+   "level": 2,
+   "answer": 1,
+   "source": "Harvard Medical School",
+   "en": {
+    "title": "Why you get goosebumps",
+    "body": "Every hair on your body has a tiny muscle attached. When you're cold or scared, those muscles tighten and pull the hairs upright. For furry animals that traps warm air or makes them look bigger; for us it's mostly left over.",
+    "question": "What makes your hairs stand up?",
+    "options": [
+     "Static electricity",
+     "Tiny muscles at each hair",
+     "Cold skin shrinking",
+     "Blood rushing to the skin"
+    ],
+    "explain": "Small muscles called arrector pili pull each hair up."
+   },
+   "nl": {
+    "title": "Waarom je kippenvel krijgt",
+    "body": "Aan elk haartje op je lichaam zit een piepklein spiertje. Als je het koud hebt of schrikt, trekken die spiertjes samen en gaan de haartjes rechtop staan. Bij dieren met een vacht houdt dat warme lucht vast of maakt het ze groter; bij ons is het vooral een overblijfsel.",
+    "question": "Waardoor gaan je haartjes rechtop staan?",
+    "options": [
+     "Statische elektriciteit",
+     "Piepkleine spiertjes bij elk haartje",
+     "Koude huid die krimpt",
+     "Bloed dat naar je huid stroomt"
+    ],
+    "explain": "Kleine spiertjes, haarzakjesspieren, trekken elk haartje omhoog."
+   }
+  },
+  {
+   "id": "body-red-cells",
+   "topic": "body",
+   "level": 2,
+   "answer": 2,
+   "source": "American Society of Hematology",
+   "en": {
+    "title": "Your red blood cells live about four months",
+    "body": "A red blood cell travels round your body hundreds of thousands of times, carrying oxygen. After about 120 days it's worn out and gets recycled, mostly in your spleen. Your body makes millions of new ones every second.",
+    "question": "How long does a red blood cell usually live?",
+    "options": [
+     "About 1 day",
+     "About 10 days",
+     "About 120 days",
+     "About 10 years"
+    ],
+    "explain": "Around 120 days, then it is broken down and replaced."
+   },
+   "nl": {
+    "title": "Je rode bloedcellen leven ongeveer vier maanden",
+    "body": "Een rode bloedcel reist honderdduizenden keren door je lichaam en vervoert zuurstof. Na ongeveer 120 dagen is hij versleten en wordt hij gerecycled, vooral in je milt. Je lichaam maakt elke seconde miljoenen nieuwe.",
+    "question": "Hoe lang leeft een rode bloedcel meestal?",
+    "options": [
+     "Ongeveer 1 dag",
+     "Ongeveer 10 dagen",
+     "Ongeveer 120 dagen",
+     "Ongeveer 10 jaar"
+    ],
+    "explain": "Ongeveer 120 dagen, daarna wordt hij afgebroken en vervangen."
+   }
+  },
+  {
+   "id": "body-wrinkly-fingers",
+   "topic": "body",
+   "level": 3,
+   "answer": 1,
+   "source": "Newcastle University (2013)",
+   "en": {
+    "title": "Wrinkly fingers in the bath are your nerves at work",
+    "body": "Fingers don't wrinkle just because they soak up water. Nerves make blood vessels under the skin narrow, which pulls the skin into folds. People with damaged nerves in their fingers don't get the wrinkles, and some research suggests they help you grip wet things.",
+    "question": "What controls the wrinkling of your fingers in water?",
+    "options": [
+     "Only the water soaking in",
+     "Your nervous system",
+     "The soap",
+     "The water temperature"
+    ],
+    "explain": "Nerves narrow the blood vessels, and the skin folds."
+   },
+   "nl": {
+    "title": "Rimpelvingers in bad zijn je zenuwen aan het werk",
+    "body": "Vingers rimpelen niet alleen omdat ze water opnemen. Zenuwen laten bloedvaatjes onder de huid vernauwen, en daardoor trekt de huid in plooien. Mensen met beschadigde zenuwen in hun vingers krijgen geen rimpels, en sommig onderzoek suggereert dat ze helpen om natte dingen vast te pakken.",
+    "question": "Wat regelt het rimpelen van je vingers in water?",
+    "options": [
+     "Alleen het water dat erin trekt",
+     "Je zenuwstelsel",
+     "De zeep",
+     "De watertemperatuur"
+    ],
+    "explain": "Zenuwen vernauwen de bloedvaatjes, en de huid plooit."
+   }
+  },
+  {
+   "id": "body-heartbeats",
+   "topic": "body",
+   "level": 3,
+   "answer": 1,
+   "source": "British Heart Foundation",
+   "en": {
+    "title": "Your heart beats about 100,000 times a day",
+    "body": "At around 70 beats a minute, your heart beats about 100,000 times a day and some 2.5 billion times in a long life - pumping without ever taking a break.",
+    "question": "Roughly how often does your heart beat in one day?",
+    "options": [
+     "10,000 times",
+     "100,000 times",
+     "1 million times",
+     "10 million times"
+    ],
+    "explain": "70 beats a minute times 1,440 minutes is about 100,000."
+   },
+   "nl": {
+    "title": "Je hart klopt ongeveer 100.000 keer per dag",
+    "body": "Met zo'n 70 slagen per minuut klopt je hart ongeveer 100.000 keer per dag en zo'n 2,5 miljard keer in een lang leven - zonder ooit pauze te nemen.",
+    "question": "Hoe vaak klopt je hart ongeveer op één dag?",
+    "options": [
+     "10.000 keer",
+     "100.000 keer",
+     "1 miljoen keer",
+     "10 miljoen keer"
+    ],
+    "explain": "70 slagen per minuut keer 1.440 minuten is ongeveer 100.000."
+   }
+  }
+ ]
 }
