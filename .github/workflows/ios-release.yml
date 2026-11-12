@@ -57,9 +57,8 @@ jobs:
 
       # ── 3. Code signing ──────────────────────────────────────────────────────
       # Secrets required (set in GitHub repo Settings → Secrets and variables → Actions):
-      #   BUILD_CERTIFICATE_BASE64      — base64 of your Distribution .p12 certificate
-      #   P12_PASSWORD                  — password for the .p12 file
-      #   KEYCHAIN_PASSWORD             — any random password; used only for the temp keychain
+      #   Optional: BUILD_CERTIFICATE_BASE64 + P12_PASSWORD + KEYCHAIN_PASSWORD.
+      #   Without them the export uses Apple cloud signing with the Admin API key.
 
       - name: Import Distribution certificate
         env:
@@ -67,6 +66,12 @@ jobs:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
+          # Optional: without a .p12 the export uses Apple cloud signing
+          # (needs an Admin API key), so no certificate secret is needed.
+          if [ -z "${BUILD_CERTIFICATE_BASE64:-}" ]; then
+            echo "No certificate secret - using cloud signing."
+            exit 0
+          fi
           CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
           KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
 
@@ -101,7 +106,12 @@ jobs:
         run: |
           KEY_DIR="$HOME/.appstoreconnect/private_keys"
           mkdir -p "$KEY_DIR"
-          echo -n "$APP_STORE_CONNECT_API_KEY_P8" | base64 --decode -o "$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
+          # Accept the .p8 file pasted as-is, or base64 of it.
+          if printf '%s' "$APP_STORE_CONNECT_API_KEY_P8" | grep -q "BEGIN PRIVATE KEY"; then
+            printf '%s\n' "$APP_STORE_CONNECT_API_KEY_P8" > "$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
+          else
+            echo -n "$APP_STORE_CONNECT_API_KEY_P8" | base64 --decode -o "$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
+          fi
           echo "ASC_KEY_PATH=$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8" >> $GITHUB_ENV
 
       # ── 3b. Resolve version ──────────────────────────────────────────────────
@@ -204,7 +214,7 @@ jobs:
       # Secrets required:
       #   APP_STORE_CONNECT_KEY_ID      — Key ID from App Store Connect API key page
       #   APP_STORE_CONNECT_ISSUER_ID   — Issuer ID from App Store Connect API key page
-      #   APP_STORE_CONNECT_API_KEY_P8  — base64 of the downloaded .p8 private key file
+      #   APP_STORE_CONNECT_API_KEY_P8  — the downloaded .p8 key file, pasted as-is (or base64 of it)
 
       - name: Upload IPA to TestFlight
         env:
@@ -214,10 +224,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          KEY_DIR="$HOME/.appstoreconnect/private_keys"
-          KEY_PATH="$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
-          mkdir -p "$KEY_DIR"
-          echo -n "$APP_STORE_CONNECT_API_KEY_P8" | base64 --decode -o "$KEY_PATH"
+          # The key file was installed in "Install App Store Connect API key".
 
           IPA_PATH=$(find morningfacts_mobile/build/ios/ipa -name "*.ipa" | head -1)
           echo "Uploading: $IPA_PATH"
