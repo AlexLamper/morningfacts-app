@@ -167,9 +167,8 @@ jobs:
           # BUILD_NAME / BUILD_NUMBER come from the "Resolve version" step.
           echo "Building $BUILD_NAME ($BUILD_NUMBER)"
 
-          if [ -z "${REVENUECAT_APPLE_KEY:-}" ]; then
-            echo "::warning::REVENUECAT_APPLE_KEY not set - building without purchases (paywall shows but cannot buy)."
-          fi
+          # Public RevenueCat iOS SDK key (safe to ship in the app). The secret overrides it if set.
+          REVENUECAT_APPLE_KEY="${REVENUECAT_APPLE_KEY:-appl_gqUUfqXKzJPeOaXSQJKPGDkpCBa}"
 
           flutter build ios --release --no-codesign \
             --build-name="$BUILD_NAME" \
