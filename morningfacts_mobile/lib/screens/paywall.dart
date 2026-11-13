@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../l10n.dart';
 import '../services/purchases.dart';
@@ -9,6 +10,11 @@ import '../theme.dart';
 import '../widgets/common.dart';
 
 enum _Plan { yearly, monthly, lifetime }
+
+const _termsUrl = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+const _privacyUrl = 'https://github.com/AlexLamper/morningfacts-app/blob/main/PRIVACY.md';
+
+void _open(String url) => launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
 
 /// Soft paywall: closable, and the free daily fact always stays.
 /// Prices come from RevenueCat when configured, else the planned prices.
@@ -160,6 +166,21 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                   TextButton(
                     onPressed: () => Navigator.of(context).pop(),
                     child: Text(t('keepFree'), style: AppText.small),
+                  ),
+                ],
+              ),
+              if (plan != _Plan.lifetime)
+                Text(t('renewNote'), textAlign: TextAlign.center, style: AppText.small.copyWith(fontSize: 11)),
+              Wrap(
+                alignment: WrapAlignment.center,
+                children: [
+                  TextButton(
+                    onPressed: () => _open(_termsUrl),
+                    child: Text(t('terms'), style: AppText.small.copyWith(fontSize: 12)),
+                  ),
+                  TextButton(
+                    onPressed: () => _open(_privacyUrl),
+                    child: Text(t('privacy'), style: AppText.small.copyWith(fontSize: 12)),
                   ),
                 ],
               ),
