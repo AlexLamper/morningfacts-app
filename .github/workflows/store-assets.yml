@@ -1,0 +1,23 @@
+name: Push store assets to App Store Connect
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [store_assets/**, .github/workflows/scripts/asc_store_assets.py]
+
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyjwt cryptography
+      - name: Upload screenshots, review shots, Dutch listing, attach build
+        env:
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_API_KEY_P8: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8 }}
+        run: python3 .github/workflows/scripts/asc_store_assets.py
